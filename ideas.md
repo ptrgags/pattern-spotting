@@ -1,0 +1,151 @@
+# Ideas
+
+This page is a place to put rough ideas for patterns before I'm ready
+to write an outline.
+
+## List of Ideas
+
+- solid fill
+    - Visually a very simple pattern
+    - in music, this could map to a few different things
+        - a drone note/chord
+        - holding any parameter constant
+- stripes
+    - Even stripes (same width on and off) are like a square wave
+    - Even stripes are like a steady rhythm with rests in between
+    - variation: non-uniform stripes
+        - Like a pulse wave/PWM on a synth
+        - connection: Pokemon cries chained multiple pulse widths together to make more waveforms
+        - barcodes
+    - variation: many colors
+    - variation: warp the stripes into waves and other shapes
+- plaid
+- brick walls
+- mazes
+- boolean operations
+    - clipping masks
+    - set operations
+    - blend modes
+    - CSG operations (e.g. SDFs in a shader)
+    - Relation to logic
+    - variation: compositing operators (like over, holdout, etc.)
+- Regular polygons
+- Musical scales
+    - piecewise linear functions
+- Timelines
+    - p5-sketchbook: used for music (a la Haskell School of Music)
+    - p5-sketchbook: used for animation curves
+    - could also be used to represent historical timelines (especially comparing simultaneous events)
+- fencepost vs gaps
+    - Evenly spacing points is a very common thing that needs to be done
+    - Easy to get off-by-one errors, so let's make diagrams and explore the math
+    - variation: evenly spacing things around a circle (what changes about the math?)
+- Fourier series
+    - Shows up a lot in acoustics - harmonic series, spectrograms
+    - In music, harmonic series are produced by acoustic instruments
+    - Can also be used for imagery
+    - difference between sound and visuals
+        - our visual system detects _shapes_, i.e. spatial domain, not spatial frequencies
+        - our auditory system detect _frequequencies_, not the shape of the resulting waveform
+    - symmetry-sketchbook: fourier series look cool! Based on _Creating Symmetry_
+    - Plenty of good resources on this topic, see e.g. 3Blue1Brown
+- binary trees
+    - spatial data structures like kd-trees
+    - balanced brackets
+    - ruler pattern
+- Sine waves
+- sawtooth waves
+- evenly spaced points in a circle
+    - like a clock
+    - symmetrical scales and chords in music
+        - chromatic - step size 1
+        - whole tone scale - step size 2
+        - fully diminished chord - step size 3
+        - augmented triad - step size 4
+        - tritone - step size 6
+    - Modular arithmetic
+- Euclidean rhythms
+    - music - used for rhythms
+    - piano keyboard - gives an explanation for why the keyboard is arranged the way it is (even though the real reason is a long history)
+    - Also describes problems like "I have 5 dishes in a dish rack that holds 8 dishes - how do I spread them apart as evenly as possible?
+- grids
+- cross stitching
+- braids
+- Wang tiles
+    - in pixel art video games, used for tilemaps
+    - music... How would you make "tiles" of measures? what are the edge conditions? what about stacking things vertically, what are the edge matching conditions?
+- concentric circles
+- voronoi diagrams
+- arpeggios
+- celtic knots/mirror curves
+- isometric grid pattern
+- coral patterns
+    - how I draw them on paper
+    - As a curve around a tree (like I did in p5-sketchbook:AnimatedTangle)
+    - related to self-avoiding walks
+        - on a grid
+        - find that Bridges paper on self-avoiding curves?
+        - cutting out a shape with sciessors - similar to Matisse algae
+    - tape echo has coiled tape that makes similar patterns, but that has self-tangent curves
+    - that attempt at quad-based coral rendering I never quite finished...
+- frieze patterns
+- wallpaper patterns
+- L-system fractals
+- IFS fractals
+- sierpinski triangle
+    - IFS fractal
+    - "triforce" subdivisions
+    - parity of Pascal's triangle
+    - Elementary cellular automata
+    - L-system with hexagon angles
+- walking bass lines
+- Chord structures (music)
+- Transformations
+    - linear
+    - projective
+    - conformal
+- Tangles
+    - Tangle Grammars
+    - Drawn on paper
+    - raster-tangles implementation
+    - VectorTangle in p5-sketchbook
+    - Applied to timelines
+- Monoids
+    - List summarizers
+    - art - which blend modes are monoid operations?
+    - timelines (music or otherwise) - monoid in each operator
+- Multiple mappings from visual parameters to musical parameters
+    - pitch -> hue, lightness, chroma, height, 
+    - lightness -> pitch, volume, synth params, etc.
+- Dice algorithms
+    - generating patterns on a grid
+    - aleatoric music
+- CSG operations
+    - what shapes can you make with these operations + basic shapes?
+    - shows up in SDFs
+    - Shows up in clipping masks
+- oscillator sync
+    - related to polyrhythms/polymeter?
+    - visually, it's like overlapping tiles slightly
+- mosaic tiles
+    - start with small units of material
+    - combine motifs into larger tiles
+    - combine tiles into a larger work
+    - connection: proteins have a similar structure
+- recursively nesting structures
+    - discography > album > song > song structures > ... > note
+    - library > section > stacks > shelf > book > chapter > paragraph > sentence > word > level
+    - art gallery
+- logarithmic scales
+    - Music: volume (dB scales)
+    - Music: semitones are a log scale of frequencies
+    - entropy/information content uses log probability
+    - Chemistry: pH scale
+- Animal gait
+- dithering
+    - Helpful for adding more (color) values when colors are limited (e.g. 1-bit display)
+    - more general version (with greyscale gradient rather than dither pattern) can be used for transitioning between two images (think Powerpoint slides)
+- hitomezashi patterns
+    - used in paper-toaster
+    - used in embroidery
+    - used in p5-sketchbook:AnimatedTangle
