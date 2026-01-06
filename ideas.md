@@ -49,6 +49,37 @@ to write an outline.
         - our auditory system detect _frequequencies_, not the shape of the resulting waveform
     - symmetry-sketchbook: fourier series look cool! Based on _Creating Symmetry_
     - Plenty of good resources on this topic, see e.g. 3Blue1Brown
+- Harmonic series
+    - additive synthesis - organs
+        - Drawbar organ: two osc additive synth
+        - osc 1: partials 1, 2, 3, 4, 5, 6, skip, 8
+        - osc 2: partials 1, skip, 3
+    - Low frequencies tend to have higher amplitudes
+        - true of sawtooth, triangle, square wave
+    - when revising a creative work, often good advice is do the most obvious thing first
+        - I know that was mentioned in Syntorial when trying to match a synth patch by ear
+        - EDIT: looking at different variations on this idea, maybe it's less about the harmonic series and more about filtering/EQ-ing an arbitrary distribution?
+    - clearing up space (physical/digital storage)
+        - make a list of what you have from largest to smallest (volume/byte size/etc)
+        - Start evaluating the biggest items first as these have the biggest impact on storage
+    - different decluttering technique
+        - make a list of what you have
+        - for each item, evaluate how important it is to you
+        - keep the important things
+        - get rid of the not important things
+        - zoom in on middle region since that's more noisy
+    - Performance testing
+        - measure first to get a sense of the "spectrum" of performance issues
+        - fix the biggest bottleneck first
+        - like a high pass filter in terms of attenuating the bad performance
+    - modeling shape with fourier series
+        - low frequencies give the overall shape
+        - higher frequencies add detail
+        - need infinite series to get perfect straight lines.
+    - Image processing
+        - low spatial frequencies are most important, they give the overall shape of the image
+        - higher spatial frequencies are less intense,
+        they give increasingly finer details.
 - binary trees
     - spatial data structures like kd-trees
     - balanced brackets
@@ -199,4 +230,17 @@ to write an outline.
             - though transformations may not always be invertible...
     - decomposing audio signal
         - projection: compute FT at a specific frequency
-        - constructor: compute inverse FT for full spectrum 
+        - constructor: compute inverse FT for full spectrum
+    - Raster Tangles grammar rule
+        - projection: Decompose pixels by sub-region address. Also decoration pixels
+        - constructor: union of sub-regions and decoration
+    - Lego set: building from bricks, disassembling into bricks
+        - interesting detail: there are steps to disassembly
+        - curiosity: what is the structure of combining bricks? in theory union of bricks is fine, but in practice, a model falls apart if bricks are not physically connected
+    - partitioning a set, unioning it back together
+    - digital art: splitting an image file into layers, compositing them
+        - this only works for project files (`.psd, .kra`, ...I forget the extension for GIMP... `.xcd`?). For flat raster formats, composition is lossy!
+        - vector graphics are more easily split/merged
+- FM synthesis
+    - sidebands - find YouTube videos about this
+    - When do sidebands relate to harmonic series?
