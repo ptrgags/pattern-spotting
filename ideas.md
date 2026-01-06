@@ -101,7 +101,9 @@ to write an outline.
     - Also describes problems like "I have 5 dishes in a dish rack that holds 8 dishes - how do I spread them apart as evenly as possible?
 - grids
 - cross stitching
+    - front pattern and back pattern
 - braids
+    - over/under pattern is an odd/even rule
 - Wang tiles
     - in pixel art video games, used for tilemaps
     - music... How would you make "tiles" of measures? what are the edge conditions? what about stacking things vertically, what are the edge matching conditions?
@@ -134,13 +136,14 @@ to write an outline.
 - Transformations
     - linear
     - projective
-    - conformal
+    - conformal (mobius transformations)
 - Tangles
     - Tangle Grammars
     - Drawn on paper
     - raster-tangles implementation
     - VectorTangle in p5-sketchbook
-    - Applied to timelines
+    - Applied to timelines for music?
+    - Curiosity: tangle grammars are a very simple language - are there any other syntactical constructs that have meaning here?
 - Monoids
     - List summarizers
     - art - which blend modes are monoid operations?
@@ -287,3 +290,50 @@ to write an outline.
         - in physics, treats time and space as a unified geometry (with some quirks due to the metric)
         - This view is a little different, instead of an animation, you have a higher dimensional shape since time is converted to a spatial dimension
         - more concrete example: imagine taking the frames of a video and plotting them along a third axis, connecting correponding points. Each curve through the stack is a world line, and surfaces would be world sheets(is that the right term?)
+- Phyllotaxis pattern
+    - in flowers and other plants
+    - relation to the fibonacci sequence
+- Seashells
+    - parametric surface
+        - core structure is often a cone-shaped helix (though sometimes logarithmic)
+        - extruding a 2D edge 
+    - my past "Super Seashells" project
+    - woah, wait, a seashell grows over time, yet the
+    history is built into a shell. So it's an example of a world sheet!!?
+        - that means knitting patterns are also similar since the history is built into the structure
+        - and similarly - log files!
+        - Curiosity - is there a way to distinguish monoids that store history information such that you can decompose the result back into its original parts?
+            - and furthermore, you might need to distinguish the access pattern. e.g. random access vs linear access only
+- fractals
+    - L-system style
+    - IFS style
+- Sierpinski triangle
+    - can be expressed as an IFS fractal
+        - deterministic: subdividing a "triforce"
+        - chaos game: three scale/translate transformations
+    - L-system version
+        - lines at angles like on a hex grid
+    - parity of Pascal's triangle
+        - I've seen another similar looking thing by coloring a 2D array... was this the same thing or a slightly different context?
+    - Shows up in some elementary cellular automata rules (why?)
+- lego wing plates - trapezoids that can combine in interesting ways
+- Escher-style tiles
+    - take a fundamental domain where sides correspond to other sides (e.g. opposite sides of a rectangle)
+    - push one edge outwards, and push the corresponding edge inwards
+    - what about when the tiles fit together in a rotated/flipped way? what changes?
+    - can be combined with e.g. Wang tiles
+    - Houndstooth fabric is another example
+    - Escher often does a checkerboard coloring
+- checkerboard pattern
+    - parity of diagonal number
+- spirals
+    - logarithmic spirals
+    - similar: fibonacci spiral
+    - archimedean spirals
+    - loxodrome double spirals
+    - square spirals
+    - helical spirals (connection to seashells)
+    - show up in plants (phyllotaxis)
+- flow of dishes through a kitchen is like electric current
+    - dishes are the electrons
+    - but to move dishes through the cycle, you have to move the holes the opposite way (like electric current - positive charges are the gaps where electrons used to be)
