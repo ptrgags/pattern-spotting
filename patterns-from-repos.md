@@ -1,0 +1,103 @@
+## Patterns in my repos
+
+- p5-sketchbook
+    - primrose field - optical illusion
+    - seashell texture - differential equation simulation in 1D, but rendered as 2D log
+    - origami tiles - triangular edge matching tiles
+    - raster tangles classic
+    - growing flowers
+    - pentag tiling
+        - edge matching tiling
+        - overlaying tilings for effect
+    - hyperbolic connections
+        - balanced brackets
+    - Phyllotaxis patterns
+    - Cordate Leaf
+        - related to L-systems, though I implemented it based on the diagram
+    - string art
+        - modular arithmetic
+    - perspective railroad
+        - perspective drawing
+        - rendered with PGA calculations
+    - differential growth
+        - B-spline interpolation
+    - worm
+        - constraint-based animation (see [YouTube video by argonaut](https://www.youtube.com/watch?v=qlfh_rv6khY&ab_channel=argonaut))
+    - Mosaic slider
+        - pixel art with constraints
+        - based on real life Lego mosaics I have
+    - Anabaena
+        - L-system + constraint-based animation
+    - Pixel Maze
+    - Double Pendulum/Double Spring
+        - Runge-kutta integration
+    - Sound Test
+        - timeline for music
+        - timeline for animation
+        - tweens
+        - musical symmetry operations
+        - music scales
+    - Robot walks
+        - n-robots (Euler puzzle + Peter Kagey article)
+        - undo operations
+        - circular arcs
+    - Musical tree
+        - L system
+        - Turtle graphics
+        - music + animation
+    - Animated Tangle
+        - Coral rendering -> specialized tree + traversal + B-spline interpolation
+        - geode rendering
+        - animation loops
+        - Reversible animations
+        - easing curves
+        - googly eyes
+        - 
+- math-notebook
+- webgpu-sketchbook
+    - raymarching
+    - clipping planes
+    - voronoi diagram with different distance functions
+    - stripey ring
+        - same technique used in p5-sketchbook:AnimatedTangle
+    - Oklch-visualizer
+    - eyes
+        - composable input signals
+- paper-toaster
+    - robot walks (From Euler puzzle 208)
+    - Edge direction tiling (was this related to Wang tiles or something else? I forget)
+    - braids
+    - isometric grids
+    - elementary cellular automaton
+    - barcodes
+    - turtle dances
+    - hitomezashi patterns
+    - hex grid
+    - square grid
+- raster-tangles
+- symmetry-sketchbook
+- super-seashells
+    - seashells
+    - spirals
+    - parametric surfaces
+    - superellipses
+- sliceform-surfaces
+- celtic-knots-3d
+    - generalization of celtic-knots pattern to 3D
+    - how to describe the pattern in 3D?
+- virtual-museum
+    - julia set fractals
+    - raymarching
+        - SDFs
+        - simulated camera that reacts to player
+        - diffuse lighting
+    - mirror rendering
+    - super seashells
+- mindless-stitchcraft
+- drawing-machines
+- polar zonohedra
+- holiday-eyecandy
+- holiday-shaders2
+- holiday-shaders
+- vision-disorders
+- mobius
