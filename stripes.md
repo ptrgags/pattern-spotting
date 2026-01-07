@@ -37,6 +37,9 @@ x.x.x.x.x.x.x.x. ...
     - instead of stripes, slabs with gaps in between
     - recipe: Minecraft
     - recipe: raymarching stack of slabs
+- IRL: Crosswalks
+    - White stripes on the dark asphalt
+    - usually uniform stripes, though not always required (see for example [PennDOT standards](https://gis.penndot.gov/BPR_PDF_FILES/Documents/LTAP/TechSheets/TS_193.pdf))
 
 ```
 knitting chart examples
