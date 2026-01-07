@@ -56,22 +56,12 @@ to write an outline.
         - osc 2: partials 1, skip, 3
     - Low frequencies tend to have higher amplitudes
         - true of sawtooth, triangle, square wave
-    - when revising a creative work, often good advice is do the most obvious thing first
-        - I know that was mentioned in Syntorial when trying to match a synth patch by ear
-        - EDIT: looking at different variations on this idea, maybe it's less about the harmonic series and more about filtering/EQ-ing an arbitrary distribution?
-    - clearing up space (physical/digital storage)
-        - make a list of what you have from largest to smallest (volume/byte size/etc)
-        - Start evaluating the biggest items first as these have the biggest impact on storage
     - different decluttering technique
         - make a list of what you have
         - for each item, evaluate how important it is to you
         - keep the important things
         - get rid of the not important things
         - zoom in on middle region since that's more noisy
-    - Performance testing
-        - measure first to get a sense of the "spectrum" of performance issues
-        - fix the biggest bottleneck first
-        - like a high pass filter in terms of attenuating the bad performance
     - modeling shape with fourier series
         - low frequencies give the overall shape
         - higher frequencies add detail
@@ -80,6 +70,17 @@ to write an outline.
         - low spatial frequencies are most important, they give the overall shape of the image
         - higher spatial frequencies are less intense,
         they give increasingly finer details.
+- Filtering
+    - when revising a creative work, often good advice is do the most obvious thing first
+        - I know that was mentioned in Syntorial when trying to match a synth patch by ear
+        - EDIT: looking at different variations on this idea, maybe it's less about the harmonic series and more about filtering/EQ-ing an arbitrary distribution?
+    - clearing up space (physical/digital storage)
+        - make a list of what you have from largest to smallest (volume/byte size/etc)
+        - Start evaluating the biggest items first as these have the biggest impact on storage
+    - Performance testing
+        - measure first to get a sense of the "spectrum" of performance issues
+        - fix the biggest bottleneck first
+        - like a high pass filter in terms of attenuating the bad performance 
 - binary trees
     - spatial data structures like kd-trees
     - balanced brackets
@@ -205,7 +206,6 @@ to write an outline.
 - FM synthesis
     - sidebands - find YouTube videos about this
     - When do sidebands relate to harmonic series?
-
 - Phyllotaxis pattern
     - in flowers and other plants
     - relation to the fibonacci sequence
