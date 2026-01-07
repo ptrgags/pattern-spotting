@@ -3,7 +3,13 @@
 Everything I do with art, math, programming, music involves patterns. I
 want to document them all in one place.
 
-## Pages
+## Index
+
+Patterns:
+
+- [Structure/Destructure](./structure-destructure.md) - disassemble something into its parts, then put it back together again
+
+Other Pages
 
 - [Ideas](./ideas.md) - This file is a place to jot down rough ideas to be fleshed out later.
 
