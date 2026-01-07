@@ -52,7 +52,9 @@
         - Reversible animations
         - easing curves
         - googly eyes
-        - 
+        - bricks
+        - stripes (including animated stripes)
+        - composing animation curves
 - math-notebook
 - webgpu-sketchbook
     - raymarching
@@ -99,5 +101,20 @@
 - holiday-eyecandy
 - holiday-shaders2
 - holiday-shaders
+    - quasicrystal
+    - rainbow pulse (how did I do this?)
+    - mandelbrot set
+    - purple twist - polar coordinates + domain warping
+    - ghost cells - voronoi patterns, stripes, noise
+    - interference - specifically of radial waves in 2D
+    - voronoi pulse - concentric rings, voronoi patterns
+    - triangles - triangle grid, lens distortion
+    - barrel and pincusshion distortion
+    - wavy eye - domain warping
+    - triangle flash - plane waves(?), triangle grid
 - vision-disorders
 - mobius
+    - complex numbers
+    - mobius transformations
+    - recipes from _Indra's Pearls_
+    - Animated fractals by exporting frames as a `.flam3` file
