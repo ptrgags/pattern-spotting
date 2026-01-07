@@ -82,7 +82,7 @@ Row 1, 3, ... (purl 3, knit 3) * k
     - `dot(uv, wave_vector)` sets the direction normal to each plane
 - 3D: oriented planes
 
-## Stripes without gaps
+## Thin stripes
 
 - lego bricks
 - white keys on a piano
