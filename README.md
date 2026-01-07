@@ -7,6 +7,7 @@ want to document them all in one place.
 
 Patterns:
 
+- [Stripes](./stripes.md) - `| | | | | | | `
 - [Structure/Destructure](./structure-destructure.md) - disassemble something into its parts, then put it back together again
 - [Patterns in Space and Time](./space-time.md) - Comparing images, audio, animation by which space/time dimensions are used
 
