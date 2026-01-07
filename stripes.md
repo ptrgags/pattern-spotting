@@ -7,20 +7,21 @@
     - Square waves
     - in digital audio, a square wave toggles between two values with the same amount of time on as time off
 - texture: rectangle split half and half with two colors `x.`. Then repeat in both directions:
-```
-x.x.x.x.x.x.x.x. ...
-x.x.x.x.x.x.x.x. ...
-x.x.x.x.x.x.x.x. ...
-x.x.x.x.x.x.x.x. ...
-```
-    - vector graphics: draw parallel lines or rectangles
-        - `line(i * dx, 0, i * dx, height)`
-        - if you want to get nitpicky, you need to choose the stroke width carefully for uniform stripes.
-        - or `rect(2 * i * dx, 0, stripe_width, height)`
-        - for the other stripes, use `(2 * i + 1) * dx` instead in rect recipe
-    - shader: `square_wave(uv.x)`
-    - knitting: rib stitch! as a chart:
 
+```
+x.x.x.x.x.x.x.x. ...
+x.x.x.x.x.x.x.x. ...
+x.x.x.x.x.x.x.x. ...
+x.x.x.x.x.x.x.x. ...
+```
+
+- vector graphics: draw parallel lines or rectangles
+    - `line(i * dx, 0, i * dx, height)`
+    - if you want to get nitpicky, you need to choose the stroke width carefully for uniform stripes.
+    - or `rect(2 * i * dx, 0, stripe_width, height)`
+    - for the other stripes, use `(2 * i + 1) * dx` instead in rect recipe
+- shader: `square_wave(uv.x)`
+- knitting: rib stitch! (see chart below)
     - though it's knitted (knit N, purl N) on row 0, 2, 4, ... and (purl N, knit N) on rows 1, 3, 5, ...
     - take range `[0, 1, ..., N] % 2` to get a digital square wave
 - Connection: Music
