@@ -3,7 +3,14 @@
 Everything I do with art, math, programming, music involves patterns. I
 want to document them all in one place.
 
-## Pages
+## Index
+
+Patterns:
+
+- [Structure/Destructure](./structure-destructure.md) - disassemble something into its parts, then put it back together again
+- [Patterns in Space and Time](./space-time.md) - Comparing images, audio, animation by which space/time dimensions are used
+
+Other Pages
 
 - [Ideas](./ideas.md) - This file is a place to jot down rough ideas to be fleshed out later.
 

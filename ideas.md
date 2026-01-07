@@ -49,6 +49,38 @@ to write an outline.
         - our auditory system detect _frequequencies_, not the shape of the resulting waveform
     - symmetry-sketchbook: fourier series look cool! Based on _Creating Symmetry_
     - Plenty of good resources on this topic, see e.g. 3Blue1Brown
+- Harmonic series
+    - additive synthesis - organs
+        - Drawbar organ: two osc additive synth
+        - osc 1: partials 1, 2, 3, 4, 5, 6, skip, 8
+        - osc 2: partials 1, skip, 3
+    - Low frequencies tend to have higher amplitudes
+        - true of sawtooth, triangle, square wave
+    - different decluttering technique
+        - make a list of what you have
+        - for each item, evaluate how important it is to you
+        - keep the important things
+        - get rid of the not important things
+        - zoom in on middle region since that's more noisy
+    - modeling shape with fourier series
+        - low frequencies give the overall shape
+        - higher frequencies add detail
+        - need infinite series to get perfect straight lines.
+    - Image processing
+        - low spatial frequencies are most important, they give the overall shape of the image
+        - higher spatial frequencies are less intense,
+        they give increasingly finer details.
+- Filtering
+    - when revising a creative work, often good advice is do the most obvious thing first
+        - I know that was mentioned in Syntorial when trying to match a synth patch by ear
+        - EDIT: looking at different variations on this idea, maybe it's less about the harmonic series and more about filtering/EQ-ing an arbitrary distribution?
+    - clearing up space (physical/digital storage)
+        - make a list of what you have from largest to smallest (volume/byte size/etc)
+        - Start evaluating the biggest items first as these have the biggest impact on storage
+    - Performance testing
+        - measure first to get a sense of the "spectrum" of performance issues
+        - fix the biggest bottleneck first
+        - like a high pass filter in terms of attenuating the bad performance 
 - binary trees
     - spatial data structures like kd-trees
     - balanced brackets
@@ -70,7 +102,9 @@ to write an outline.
     - Also describes problems like "I have 5 dishes in a dish rack that holds 8 dishes - how do I spread them apart as evenly as possible?
 - grids
 - cross stitching
+    - front pattern and back pattern
 - braids
+    - over/under pattern is an odd/even rule
 - Wang tiles
     - in pixel art video games, used for tilemaps
     - music... How would you make "tiles" of measures? what are the edge conditions? what about stacking things vertically, what are the edge matching conditions?
@@ -103,13 +137,14 @@ to write an outline.
 - Transformations
     - linear
     - projective
-    - conformal
+    - conformal (mobius transformations)
 - Tangles
     - Tangle Grammars
     - Drawn on paper
     - raster-tangles implementation
     - VectorTangle in p5-sketchbook
-    - Applied to timelines
+    - Applied to timelines for music?
+    - Curiosity: tangle grammars are a very simple language - are there any other syntactical constructs that have meaning here?
 - Monoids
     - List summarizers
     - art - which blend modes are monoid operations?
@@ -149,3 +184,73 @@ to write an outline.
     - used in paper-toaster
     - used in embroidery
     - used in p5-sketchbook:AnimatedTangle
+- Drawing a circle
+    - parametric equation
+    - implicit equation
+    - Geometric algebra (related to implicit)
+    - complex number implementation
+    - Explicit rendering as center, radius
+    - SDF version
+    - variation: use a different distance function
+- normalized ranges
+    - signed: [-1, 1]
+    - unsigned: [0, 1]
+    - In practice, sometimes we have to use integers, e.g. `u8, i8`
+    - On synths
+        - unipolar: a signal with an unsigned value
+        - bipolar: a signal with a signed value
+    - converting between them
+        - unsigned -> signed: `signed = 2 * unsigned - 1`
+        - signed -> unsigned: `unsigned = 0.5 + 0.5 * signed` (inverse)
+            - obscure trig function: haversine is basically an unsigned version of cosine
+- FM synthesis
+    - sidebands - find YouTube videos about this
+    - When do sidebands relate to harmonic series?
+- Phyllotaxis pattern
+    - in flowers and other plants
+    - relation to the fibonacci sequence
+- Seashells
+    - parametric surface
+        - core structure is often a cone-shaped helix (though sometimes logarithmic)
+        - extruding a 2D edge 
+    - my past "Super Seashells" project
+    - woah, wait, a seashell grows over time, yet the
+    history is built into a shell. So it's an example of a world sheet!!?
+        - discussed further in [Space-time](./space-time.md)
+        - that means knitting patterns are also similar since the history is built into the structure
+        - and similarly - log files!
+        - Curiosity - is there a way to distinguish monoids that store history information such that you can decompose the result back into its original parts?
+            - and furthermore, you might need to distinguish the access pattern. e.g. random access vs linear access only
+- fractals
+    - L-system style
+    - IFS style
+- Sierpinski triangle
+    - can be expressed as an IFS fractal
+        - deterministic: subdividing a "triforce"
+        - chaos game: three scale/translate transformations
+    - L-system version
+        - lines at angles like on a hex grid
+    - parity of Pascal's triangle
+        - I've seen another similar looking thing by coloring a 2D array... was this the same thing or a slightly different context?
+    - Shows up in some elementary cellular automata rules (why?)
+- lego wing plates - trapezoids that can combine in interesting ways
+- Escher-style tiles
+    - take a fundamental domain where sides correspond to other sides (e.g. opposite sides of a rectangle)
+    - push one edge outwards, and push the corresponding edge inwards
+    - what about when the tiles fit together in a rotated/flipped way? what changes?
+    - can be combined with e.g. Wang tiles
+    - Houndstooth fabric is another example
+    - Escher often does a checkerboard coloring
+- checkerboard pattern
+    - parity of diagonal number
+- spirals
+    - logarithmic spirals
+    - similar: fibonacci spiral
+    - archimedean spirals
+    - loxodrome double spirals
+    - square spirals
+    - helical spirals (connection to seashells)
+    - show up in plants (phyllotaxis)
+- flow of dishes through a kitchen is like electric current
+    - dishes are the electrons
+    - but to move dishes through the cycle, you have to move the holes the opposite way (like electric current - positive charges are the gaps where electrons used to be)
