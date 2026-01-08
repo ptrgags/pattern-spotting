@@ -7,7 +7,7 @@ patterns.
 This repository is for me to catalogue notable patterns with examples
 and recipes for implementing them. I'm particularly interested in exploring
 connections between disciplines. For example, the following diagram
-might be representing a zig-zag frieze pattern in art, or perhaps an
+might represent a zig-zag frieze pattern in art, or perhaps an
 up-and-down arpeggio pattern in music:
 
 ```
