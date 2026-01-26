@@ -25,6 +25,10 @@ Patterns:
 - [Structure/Destructure](./structure-destructure.md) - disassemble something into its parts, then put it back together again
 - [Patterns in Space and Time](./space-time.md) - Comparing images, audio, animation by which space/time dimensions are used
 
+Transformations:
+
+- [Reflection](./reflections.md) - Flip things backwards
+
 Other Pages
 
 - [Ideas](./ideas.md) - This file is a place to jot down rough ideas to be fleshed out later.
