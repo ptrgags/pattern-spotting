@@ -177,3 +177,4 @@ TODO: Caveats about duals
 - light rays reflect through the normal
 - real life mirrors flip z coordinate
 - in shaders, absolute value is used to fold space
+- I haven't mentioned chirality!
