@@ -1,5 +1,7 @@
 # Reflections
 
+Page Status: OUTLINE
+
 ## Basic properties
 
 - Something that works like looking in a mirror
