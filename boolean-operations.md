@@ -155,8 +155,6 @@ TODO: Description
 | 1 | 0 |  0   |
 | 1 | 1 |  0   |
 
-
-
 ## Different and Same: XOR and XNOR
 
 Exclusive OR (XOR) is an operator that is true
@@ -193,7 +191,16 @@ Equivalent expressions:
 
 ## As Set Operations
 
+Basic set operations:
 
+| Operator | Description |
+| --- | --- |
+| $\emptyset$| Empty set  | 
+| $U$ | Universe (set of all relevant elements) |
+| $A^C$ | Set Complement | 
+| $A \cap B$ | Logical AND|
+| $A \cup  B$ | Logical OR|
+| $A - B$ | Set difference. The set of elements in A not in B |
 
 | Operator | Set Operation | Description |
 | --- | --- | --- |
@@ -237,6 +244,21 @@ Equivalent expressions:
 
 ## Programming: Logic Operators
 
+The basic logical operations in most programming
+languages are:
+
+| Operator | Description |
+| --- | --- |
+| `false` |  | 
+| `true` | |
+| `!A` | Logical NOT | 
+| `A && B` | Logical AND|
+| `A \|\| B` | Logical OR|
+| `A != B` | Not equals. For booleans, this is equivalent to XOR |
+| `A == B` | Equality. For booleans, this is equivalent to XNOR |
+
+All 16 boolean operations:
+
 | Boolean Operator | Bitwise Operator | Description |
 | --- | --- | --- |
 | FALSE | `false` |  |
@@ -265,18 +287,19 @@ Equivalent expressions:
 > <img src="./figures/boolean-xor.png" width="250">
 
 In programming, sometimes we want to apply these
-logic functions to the bits of a (often unsigned) integer.
+logic functions to combine the bits of two numbers.
 
-For example, bitwise AND:
+The basic bitwise operations in most programming
+languages are:
 
-```
-(comparing column by column)
-A = 0b1001
-   BITWISE AND
-B = 0b1010
-    ------
-    0b1000
-```
+| Operator | Description |
+| --- | --- |
+| `0x00` |  | 
+| `0xFF` | True = all ones |
+| `~A` | Bitwise NOT | 
+| `A & B` | Bitwise AND. Bits set in both A and B.|
+| `A \| B` | Bitwise OR. Bits set in A, B, or both. |
+| `A ^ B` | Bitwise XOR |
 
 For the table below, I'm using 8-bit unsigned integers
 (i.e. numbers from 0 to 255) to keep this simple.
