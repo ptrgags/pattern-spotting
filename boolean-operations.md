@@ -302,6 +302,11 @@ For the table below, I'm using 8-bit unsigned integers
 
 ## More notes
 
+- SQL has at least FOUR different kinds of boolean operators!
+  - on values: logical operators
+  - on values: logical values
+  - on Tables (horizontally): various types of joins
+  - On Tables (vertically): UNION, INTERSECTION
 - for bitwise boolean operators, if you plot this as a 2D table, there are only a handful of table shapes, up to reflection/rotation (see notebook)
     - have bitwise AND (&), OR (|), NOT (~), and sometimes XOR (^). Focus on u8 types to avoid having to worry about managing the upper bits with NOT
 - SDF operations use min, max and negative for union, intersection and complement. Though this is only correct for the outside of the shape (see iq article).
