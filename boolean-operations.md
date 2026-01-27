@@ -297,8 +297,8 @@ For the table below, I'm using 8-bit unsigned integers
 | B NOT IMPLIES A | `(~A) & B` | Set difference using the equivalent formula B AND NOT A |
 | A IMPLIES B | `(~A) \| B` | Using the equivalent formula (NOT A) OR B |
 | B IMPLIES A | `A \| (~B)` | Negation of set difference |
-| A XOR B | `(A & (~B)) \| ((~A) & B)` | (A AND NOT B) OR (NOT A AND B) |
-| A XNOR B | `(A & B) \| ~(A \| B)` | (A AND B) OR (A NOR B) |
+| A XOR B | `A ^ B` | Bitwise XOR |
+| A XNOR B | `~(A ^ B)` | Negation of XOR |
 
 ## More notes
 
