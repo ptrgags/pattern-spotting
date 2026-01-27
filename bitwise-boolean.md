@@ -1,4 +1,4 @@
-# Bitwise Boolean Operators
+# Patterns in Bitwise Boolean Operators
 
 ## True and False
 

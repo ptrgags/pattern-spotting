@@ -216,7 +216,7 @@ Equivalent expressions:
 
 ## Signed Distance Fields
 
-| Operator | Set Operation | Description |
+| Boolean Operator | SDF Operation | Description |
 | --- | --- | --- |
 | FALSE | $+\infty$ | Every point is outside the surface |
 | TRUE | $-\infty$ | Every point is inside the surface |
@@ -234,6 +234,71 @@ Equivalent expressions:
 | B IMPLIES A | $-\max(-A, B)$ | Negation of set difference |
 | A XOR B | $\min(\max(A, -B), \max(-A, B))$ | Symmetric Difference |
 | A XNOR B | $\min(\max(A, B), -\min(A, B))$ |Set of elements in both A and B or in neither of them |
+
+## Programming: Logic Operators
+
+| Boolean Operator | Bitwise Operator | Description |
+| --- | --- | --- |
+| FALSE | `false` |  |
+| TRUE | `true` | |
+| A | `A` | Select A |
+| B | `B` | Select B |
+| NOT A | `!A` | Logical NOT |
+| NOT B | `!B` | Logical NOT |
+| A OR B | `A \|\| B` | Logical OR |
+| A NOR B | `!(A \|\| B)` | Negation of OR|
+| A AND B | `A && B` | Logical AND |
+| A NAND B | `!(A && B)` | Negation of AND |
+| A NOT IMPLIES B | `A && (!B)` | A AND (NOT B) |
+| B NOT IMPLIES A | `(!A) && B` | (NOT A) AND B |
+| A IMPLIES B | `(!A) \|\| B` | (NOT A) OR B |
+| B IMPLIES A | `A \|\| (!B)` | A OR (NOT B) |
+| A XOR B | `A != B` | Not equals. On a boolean, this is the same as XOR |
+| A XNOR B | `A == B` | Equality testing. On a boolean, this is the same as XOR|
+
+## Programming: Bitwise Operations
+
+>[!INFO]
+>See also [Patterns in Bitwise Boolean Operators](./bitwise-boolean.md) for further explorations. There are
+> some pretty patterns when interpreted as colors!
+>
+> <img src="./figures/boolean-xor.png" width="250">
+
+In programming, sometimes we want to apply these
+logic functions to the bits of a (often unsigned) integer.
+
+For example, bitwise AND:
+
+```
+(comparing column by column)
+A = 0b1001
+   BITWISE AND
+B = 0b1010
+    ------
+    0b1000
+```
+
+For the table below, I'm using 8-bit unsigned integers
+(i.e. numbers from 0 to 255) to keep this simple.
+
+| Boolean Operator | Bitwise Operator | Description |
+| --- | --- | --- |
+| FALSE | `0 = 0x00 = 0b00000000` | no bits set |
+| TRUE | `255 = 0xFF = 0b11111111` | all bits set |
+| A | `A` | Select A |
+| B | `B` | Select B |
+| NOT A | `~A` | Bitwise NOT, flips all the bits |
+| NOT B | `~B` | Bitwise NOT |
+| A OR B | `A \| B` | Bitwise OR |
+| A NOR B | `~(A \| B)` | Using the equivalent formula NOT (A OR B)|
+| A AND B | `A & B` | Bitwise AND |
+| A NAND B | `~(A & B)` | Using the equivalent formula NOT (A AND B) |
+| A NOT IMPLIES B | `A & (~B)` | Set difference using the equivalent formula A AND NOT B|
+| B NOT IMPLIES A | `(~A) & B` | Set difference using the equivalent formula B AND NOT A |
+| A IMPLIES B | `(~A) \| B` | Using the equivalent formula (NOT A) OR B |
+| B IMPLIES A | `A \| (~B)` | Negation of set difference |
+| A XOR B | `(A & (~B)) \| ((~A) & B)` | (A AND NOT B) OR (NOT A AND B) |
+| A XNOR B | `(A & B) \| ~(A \| B)` | (A AND B) OR (A NOR B) |
 
 ## More notes
 
