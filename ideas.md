@@ -214,7 +214,19 @@ to write an outline.
             - and furthermore, you might need to distinguish the access pattern. e.g. random access vs linear access only
 - fractals
     - L-system style
-    - IFS style
+    - IFS style (a la Barnsley)
+        - Deterministic algorithm
+        - Chaos game
+- Tilings
+    - Can be described by an IFS
+    - Rendering: better algorithm than chaos game
+        - if generators commute, iterate like a grid
+        - If you can find a fundamental domain that can be uniquely addressed, then you can treat it like a limited breadth-first search
+    - Depending on the transformations involved you get different kinds of tilings
+        - rotation/reflection: point groups
+        - translation, rotation, reflection: frieze/wallpaper groups
+        - higher dimensions: 3D point groups, line groups, space groups
+            - Wait... in between line and space groups isn't there something like a wallpaper group but possibly a 180 degree rotation or a reflection in the plane? what do you call that? I vaguely remember seeing a Bridges paper about that...
 - Sierpinski triangle
     - can be expressed as an IFS fractal
         - deterministic: subdividing a "triforce"
@@ -245,3 +257,71 @@ to write an outline.
 - flow of dishes through a kitchen is like electric current
     - dishes are the electrons
     - but to move dishes through the cycle, you have to move the holes the opposite way (like electric current - positive charges are the gaps where electrons used to be)
+- Sandwich product
+    - viewing a transformation from another perspective
+    - concept is from group theory: `A 🥪 B = ABA^(-1)`
+    - Literal sandwich making:
+        - open bun
+        - add filling
+        - close bun
+    - category theory: this is an endofunctor
+- Group theory difference
+    - `AB^(-1)`
+    - example: vector 
+    - this was relevant for `drawing-machines`
+- Transformation hierarchies
+    - `drawing-machines`
+    - Stored as a Directed Acyclic Graph
+- Directed Acyclic Graph (DAG)
+    - similar to a tree, but children can be shared
+    - partially ordered sets
+    - Making a schedule with dependencies
+        - topological sort provides a rendering order
+- Hyperbolic tilings
+- Crochet branch and merge
+    - Maps can be written like `hyperbolic-connections`
+    - Could be used with l-system
+- Turtle graphics
+    - Often used with L-systems
+    - see also `turtle-dances` in `paper-toaster`
+- Depth-first search
+    - Traversing trees
+    - Generating mazes
+    - solving mazes (follow the left wall)
+    - topological sort
+- twisty puzzles
+    - classic cube-shaped one
+    - simpler 2D version
+    - I remember seeing a Bridges paper about two-disk fractals -- the oribits are like different twisty puzzles
+- midpoint magma
+    - like mixing paint
+    - result depends on the order 
+- musical scales as interleaved chords
+    - The 7 modes + minor scales and some others can be viewed as a seventh chord on 1 and a minor chord on 2
+    - 2 vs b2 matters (e.g. Lydian vs Double Harmonic, both are a M7 + M chord, but double harmonic uses b2)
+    - what does this look like on a circle?
+- Pitch classes and hue
+    - 12 steps across the
+    - Oklch hue is described in degrees, so 360/12 = 30 degree steps
+    - what starting phase looks best?
+- OPTIC symmetries in music (from _Geometry of Music_)
+    - Octave - whether octave numbers matter (absolute pitch vs pitch class)
+    - Permutation - whether the order of pitches matter
+    - Transposition - like translation in pitch space
+    - Inversion - like reflection around a center pitch
+    - Cardinality - handling doubled notes
+    - Depending on which symmetries are active, you get different types of musical objects
+        - e.g. Octave: absolute pitch vs pitch class
+        - e.g. permutation: are pitches stored as a list, set, multiset? (I think this is related to Boom hierarchy)
+    - ❓Analogs in color?
+        - opposite colors - kinda like inversion?
+        - transposition - like a hue shift
+        - permutation - palette order?
+        - color combinations are something like intervals/chords
+        - Need to think about this more
+
+## Resources to examine
+
+- [List of data structures on Wikipedia](https://en.wikipedia.org/wiki/List_of_data_structures)
+- [Bridges Archive](https://archive.bridgesmathart.org/#gsc.tab=0)
+- [Boom Hierarchy](https://en.wikipedia.org/wiki/Abstract_data_type#Boom_hierarchy) - concerning binary trees, lists, bags, and sets
