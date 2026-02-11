@@ -26,6 +26,10 @@ Patterns:
 - [Patterns in Space and Time](./space-time.md) - Comparing images, audio, animation by which space/time dimensions are used
 - [Patterns in Trigonometry](./trig-patterns.md) - Patterns that helped me learn my sine/cosine values years ago
 
+Transformations:
+
+- [Reflection](./reflections.md) - Flip things backwards
+
 Other Pages
 
 - [Ideas](./ideas.md) - This file is a place to jot down rough ideas to be fleshed out later.
