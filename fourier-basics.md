@@ -9,12 +9,16 @@ First, some preliminaries
 
 IMG: Diagram of the two interpretations... or maybe a Desmos graph?
 
-Let $C_n(t) = e^{i 2 \pi n t}$ be the circle function. It rep
+Let $C_n(t) = e^{i 2 \pi n t}$ be the circle function with linear frequency $n$ over time $t$. As $t$
+goes from $0 \to 1$, it traverses the unit circle counterclockwise $n$ times.
 
 Some handy properties of this function:
 
 - $C_0 = 1$
     - this is because $e^0 = 1$
+- $C_n(t) = 1$ whenever $nt = k$ for some integer k
+    - This is because $e^{i \theta} = 1$ when $\theta = 2 \pi k$
+    - Here $\theta = 2\pi n t$ so $k = nt$
 - $C_aC_b = C_{a + b}$ 
     - $\exp(i 2 \pi a t)\exp(i 2 \pi b t) = \exp(i 2 \pi (a + b) t) = C_{a + b}$
 - $C_n(t) = C_t(n)$

@@ -110,7 +110,7 @@ Aside: The book [_Creating Symmetry_](https://www.google.com/books/edition/Creat
 
 This section assumes some details found on the [Fourier Basics](./fourier-basics.md) page.
 
-Let's take a general function of circle functions $f = \sum_n a_n C_n$. In a later section, we'll examine how $\sin(t), \cos(t)$ are special cases of this.
+Let's take a general function of circle functions $f = \sum_n a_n C_n$ where $n$ is an integer. In a later section, we'll examine how $\sin(t), \cos(t)$ are special cases of this.
 
 - $I$: $\mathscr{F} \sum_n a_n C_n = \sum_n a_n \delta_n$
     - Every function has this symmetry
@@ -134,6 +134,17 @@ Let's take a general function of circle functions $f = \sum_n a_n C_n$. In a lat
         - So $1 = C_n(d) = e^{i 2 \pi n d}$
         - This is only true for $2 \pi n d = 2 \pi k$ for some integer $k$
         - so we can only have nonzero coefficients where $nd = k$
+- Special case: $T_{2\pi}$ symmetry
+    - Note: $C_n(t)$ uses $t \in [0, 1]$ instead of $[0, 2 \pi]$ so it's really $T_1$ here.
+    - $C_n(1) = 1$ since $n$ is an integer.
+    - So the symmetry condition reduces to $a_n = a_n$, which is always true!
+    - In other words, in the frequency space, $T_1 = I$
+- Special case: $T_{2pi/N}$ symmetry
+    - Again, due to t being normalized in $C_n(t) we use $T_{1/N}$ here
+    - The symmetry condition becomes $a_n = C_n(1/N)a_n$
+    - So we need coefficients 0 except when $C_n(1/N) = 1$
+    - So the coefficients we keep are $n/N$ is an integer
+    - In other words, we filter for oscillations at frequencies $..., -3N, -2N, -N, 0, N, 2N, 3N, ...$
 - $\gamma_d$: $\mathscr{F} \overline{\sum_n a_n C_n(t + d)} = \mathscr{F} \sum_n \overline{a_n} C_{-n}(t + d) = \mathscr{F} \sum_n \overline{a_n} C_{-n}(t)C_{-n}(d) = \mathscr{F}\sum_m\overline{a_{-m}}C_m(d)C_m = \sum_m \overline{a_{-m}}C_m(d)\delta_m$
     - Symmetry condition: `R(md) * conj f rev = f`
 
@@ -143,3 +154,45 @@ Let's take a general function of circle functions $f = \sum_n a_n C_n$. In a lat
 Aside: Much of the above is inspired by the same book, _Creating Symmetry_. That chapter on parametric curves is most relevant here. Farris goes on to explore more general Fourier series in the complex plane.
 
 Aside: That book inspired my past project [`symmetry-sketchbook`](https://ptrgags.dev/symmetry-sketchbook/#/)
+
+## Sine and Cosine as circular oscillations
+
+Let's check that the above holds for sine and cosine.
+
+First, we need to be able to write sin and cosine as
+circle functions. Using the complex exponential defintions:
+
+- $\cos(2 \pi n t) = \frac{1}{2}(e^{i 2\pi n t} + e^{- i 2 \pi n t}) = \frac{1}{2}(C_n + C_{-n})$
+- $\sin(2 \pi n t) = \frac{1}{2i}(e^{i 2\pi n t} - e^{- i 2 \pi n t}) = \frac{1}{2i}(C_n - C_{-n})$
+
+As shorthand, let's use $\cos_n = \cos(2 \pi n t)$ and similarly $\sin_n = \sin(2 \pi n t)$
+
+So:
+
+- $\mathscr{F} \cos_n = \frac{1}{2}(\delta_n + \delta_{-n})$
+- $\mathscr{F} \sin_n = \frac{1}{2i}(\delta_n - \delta_{-n})$
+
+Usually sinusoids are described as single peaks, but that ignores negative frequencies and the phase. A more accurate description would be:
+
+- Cosine has two peaks of amplitude $1/2$ at $\pm n$.
+- Sine has a a peak of $-\frac{1}{2}i$ at $n$ and a peak of $\frac{1}{2}i$ at $-n$
+
+
+## Symmetries of sine and cosine in frequency space
+
+> ![CAUTION]
+> I did something wrong above, I'm getting the wrong symmetries.
+
+Let's look at the coefficients for $\sin_n$:
+
+- $a_n = -\frac{1}{2}i, a_{-1} = \frac{1}{2}i$
+    - So $a_n = -a_{-n} = e^{i \pi} a_{-n} = e^{i 2 \pi n (1/(2n))} a_{-n} = C_n(2n)a_{-1}$
+    - Both are imaginary, so sine does not have $X$ symmetry
+
+TODO: I think I did something wrong somewhere earlier on this page... 
+
+Now let's lok at $\cos_n$:
+
+- $a_n = a_{-n} = \frac{1}{2}$
+    - Since this has `rev` symmetry, we have $R$ symmetry
+    - Since all the coefficients are real, we have $X$ symmetry
