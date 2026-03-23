@@ -49,7 +49,7 @@ $Z(\text{graph}(f)) = \text{graph}(f)$
 Note that this is an equation on _sets_. So $Z$ can scramble the arrangement of points within a set, but overall the shape must
 be exactly he same.
 
-### Recipe: Function symmetries
+### Recipe: Conditions for symmetry
 
 How are these transformations related to the function itself?
 We can transform a point $(x, f(x)) \in \text{graph}(f)$ and see
@@ -79,3 +79,23 @@ what must be true for the end result to produce the same set.
     - For both $\sin, \cos$, we have this symmetry when $d = \pi + 2 \pi k$. 
     - So $\gamma_{(2k + 1)\pi} = \gamma_{\pi}^{2k + 1}$ are symmetries of both sinusoids
     - Why only odd powers? well, $\gamma_d^2(x, y) = (x + 2d, (-1)^2y) = (x + 2d, y) = T_{2d}(x, y)$. So even powers fall under translation symmetry above.
+
+### Meta pattern
+
+There's a meta- pattern to the above. If we take transformation $Z$
+it transforms a point $(x, y) \to (A(x), B(y))$
+
+- $Z(x, f(x)) = (A(x), Bf(x))$
+    - This point must correspond to $(A(x), fA(x))$ by definition of $\text{graph}(f)$
+    - For this to be true, $Bf(x) = fA(x)$ for all $x$
+    - So in this sense, $(A, B)$ is a symmetry of $f$
+    - This corresponds to $Z$ being a symmetry of $\text{graph}(f)$
+    - These are different, yet related notions of symmetry. 
+        - $Z$ is a transformation of 2D points and fixes a set. 
+        - $A$ transforms the domain of $f$.
+        - $B$ transforms the codomain of $f$
+        - Individually, $A$, $B$ aren't required to fix any points or sets
+        - however, $A, B$ work together to fix the graph
+    - More interpretations for $fA = Bf$
+        - If you want to commute $A$ to the left, $f$ transmutes it into $B$
+        - If you want to commute $B$ to the right, $f$ transmutes it into $A$
