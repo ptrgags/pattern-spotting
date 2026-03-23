@@ -99,6 +99,47 @@ it transforms a point $(x, y) \to (A(x), B(y))$
     - More interpretations for $fA = Bf$
         - If you want to commute $A$ to the left, $f$ transmutes it into $B$
         - If you want to commute $B$ to the right, $f$ transmutes it into $A$
+    - If $A$ is invertible, then $f = BfA^{-1}$ is an equivalent symmetry condition
+    - if $B$ is invertible, then $B^{-1}fA = f$ is an equivalent symmetry condition
 
 IMG: Diagram of this pattern
 
+Aside: The book [_Creating Symmetry_](https://www.google.com/books/edition/Creating_Symmetry/mmqYDwAAQBAJ?hl=en) by Frank Farris mentions this kind of generalized symmetry when discussing color reversing/turning symmetries.
+
+## Symmetry operations in Frequency space
+
+This section assumes some details found on the [Fourier Basics](./fourier-basics.md) page.
+
+Let's take a general function of circle functions $f = \sum_n a_n C_n$. In a later section, we'll examine how $\sin(t), \cos(t)$ are special cases of this.
+
+- $I$: $\mathscr{F} \sum_n a_n C_n = \sum_n a_n \delta_n$
+    - Every function has this symmetry
+- $X$: $\mathscr{F} \sum_n a_n C_n(-t) = \mathscr{F}\sum_n a_n C_{-n}(t) = \mathscr{F} \sum_m a_{-m} C_m = \sum_m a_{-m}\delta_m$
+    - Reversing time has the effect of reordering the coefficients.
+    - Let's call this transformation on the coefficients `rev`
+    since it reverses the order of the indices
+    - To have this symmetry, for all $n$, the coefficients must obey $C_n = C_{-n}$
+    - In other words, `f rev = f`
+- $R_2$: $\mathscr{F} \overline{\sum_n a_n C_n(-t)} = \mathscr{F}\sum_m \overline{a_n} C_{n} = \sum_n \overline{a_n} \delta_n$
+    - Note: i'm using complex conjugate $z \mapsto \overline{z}$ to handle the $y \to -y$ part
+    - Let's refer to this transformation of coefficients as `conj` for complex conjugate
+    - The symmetry condition here is $a_n = \overline{a_n}$
+    - This is equivalent to saying that $a_n$ must be real
+    - In terms of coefficients,  `conj f = f`
+- $T_d$: $\mathscr{F} \sum_n a_n C_n(t + d) = \mathscr{F}\sum_n a_n C_n (t)C_n(d) = \sum_n C_n(d)a_n \delta_n$
+    - A phase shift in time corresponds to a rotation of the coefficients proportional to the frequency, since $C_n(d) = e^{i 2 \pi n d}$ which under complex multiplication acts like a rotation
+    - Let's call this transformation of coefficients $R_{nd}$
+    - TODO: Why does the rotation depend on frequency? I think it has to do with the fact that at higher frequencies, you fit more cycles of the wave in one period
+    - The symmetry condition is that $a_n = C_n(d)a_n$
+        - So $1 = C_n(d) = e^{i 2 \pi n d}$
+        - This is only true for $2 \pi n d = 2 \pi k$ for some integer $k$
+        - so we can only have nonzero coefficients where $nd = k$
+- $\gamma_d$: $\mathscr{F} \overline{\sum_n a_n C_n(t + d)} = \mathscr{F} \sum_n \overline{a_n} C_{-n}(t + d) = \mathscr{F} \sum_n \overline{a_n} C_{-n}(t)C_{-n}(d) = \mathscr{F}\sum_m\overline{a_{-m}}C_m(d)C_m = \sum_m \overline{a_{-m}}C_m(d)\delta_m$
+    - Symmetry condition: `R(md) * conj f rev = f`
+
+> ![CAUTION]
+> TODO I need to finish this section
+
+Aside: Much of the above is inspired by the same book, _Creating Symmetry_. That chapter on parametric curves is most relevant here. Farris goes on to explore more general Fourier series in the complex plane.
+
+Aside: That book inspired my past project [`symmetry-sketchbook`](https://ptrgags.dev/symmetry-sketchbook/#/)
