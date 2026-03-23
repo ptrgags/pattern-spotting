@@ -99,3 +99,27 @@ it transforms a point $(x, y) \to (A(x), B(y))$
     - More interpretations for $fA = Bf$
         - If you want to commute $A$ to the left, $f$ transmutes it into $B$
         - If you want to commute $B$ to the right, $f$ transmutes it into $A$
+
+IMG: Diagram of this pattern
+
+## Circle Functions
+
+Let $C_n(t) = e^{i 2 \pi n t}$ be the circle function. It rep
+
+Some handy properties of this function:
+
+- $C_aC_b = C_{a + b}$ 
+    - $\exp(i 2 \pi a t)\exp(i 2 \pi b t) = \exp(i 2 \pi (a + b) t) = C_{a + b}$
+- $C_n(t) = C_t(n)$
+    - Since multiplication is commutative, $nt = tn$ so we can swap the variables
+    - This means there are really 2 interpretations of the complex exponential!
+    - a point spinning around the unit circle in time at constant frequency $n$
+    - Sampling the $n$-th point around the unit circle when moving with constant step size $2\pi t$
+- $\overline{C_n} = C_{-n}$
+    - This is because $\overline{e^{i\theta}} = e^{-i\theta}$
+- $|C_n| = 1$
+    - We're walking around the unit circle so the radius stays constant
+    - You could also take Euler's Formula and take the magnitude of that which reduces to $\sin^2 + \cos^2 = 1$
+
+IMG: Diagram of the two interpretations
+
