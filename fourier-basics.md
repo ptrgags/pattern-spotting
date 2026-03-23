@@ -13,6 +13,8 @@ Let $C_n(t) = e^{i 2 \pi n t}$ be the circle function. It rep
 
 Some handy properties of this function:
 
+- $C_0 = 1$
+    - this is because $e^0 = 1$
 - $C_aC_b = C_{a + b}$ 
     - $\exp(i 2 \pi a t)\exp(i 2 \pi b t) = \exp(i 2 \pi (a + b) t) = C_{a + b}$
 - $C_n(t) = C_t(n)$
@@ -58,11 +60,15 @@ Some subtleties here:
 
 ### Properties of the Dirac Delta
 
-In later sections, we'll need some other properties 
+In later sections, we'll need some other properties of the
+dirac delta. 
 
 - $\int_{-\infty}^\infty f(t)\delta_k(t) dt = f(k)$ - the [sampling property](https://en.wikipedia.org/wiki/Dirac_delta_function#Translation)
 - $f(k) = \sum_n a_n \delta_n(k) = a_k\delta_k(k)$ when fully expanded
     - This is because all of the other $\delta_n(k) = 0$ by definition 
+- $\int_{-\infty}^\infty C_{-k}(t) dt = \delta(k)$
+    - TODO: Why does this work? I don't fully understand it at present.
+    - Nevertheless, this property can be found in [this table](https://en.wikipedia.org/wiki/Fourier_transform#Distributions,_one-dimensional), row 301
 
 ## Fourier Transform Definition
 
@@ -85,6 +91,9 @@ reverse.
 
 ## Fourier Transform is Linear
 
+> ![TIP]
+> You can distribute a Fourier transform over a linear combination of functions
+
 Let's prove that $\mathscr{F}$ is linear. This is inherited from properties of integrals in general
 
 - $\mathscr{F} (f + g) = \int(f + g) C_{-k} dt = \int f C_{-k} dt + \int g C_{-k} dt = \mathscr{F}f + \mathscr{F} g$
@@ -96,3 +105,35 @@ The important thing here is now we can take the Fourier series
 of a linear combination of functions by linearity:
 
 $$\mathscr{F} (\sum_n a_n f_n) = \sum_n a_n \mathscr{F} f_n = \sum_n a_n \hat{f_n}$$
+
+## Fourier Pair: 1 and Dirac Delta
+
+> ![TIP]
+> a constant function in time is equivalent to a spike at 0 in frequency space
+
+- $\mathscr{F} 1 = \int 1 C_{-k} dt = \delta(k)$ - See the properties section for diract delta
+- $\mathscr{F^{-1}} \delta(k) = \int \delta(k) C_t(k) dk = C_t(0) = 1$
+- so $1 \leftrightarrow \delta$
+
+## Fourier Pair: Circle function and Shifted Delta
+
+> ![TIP]
+> An oscillation in time at a constant frequency corresponds to a specific peak in the frequency spectrum
+
+- $\mathscr{F}C_n = \int C_n C_{-k} dt = \int C_{n - k} dt = \int C_{-(k - n)}dt = \delta_n(k)$
+- $\mathscr{F}^{-1}\delta_n = \int \delta_n C_t dk = C_t(n) = C_n(t) = C_n$
+- So $C_n \leftrightarrow \delta_n$
+- Also notice that since $C_0 = 1$ and $\delta_0 = \delta$, $1 \leftrightarrow \delta$ is a special case
+
+## Fourier Pair: Circle Basis and Delta Basis
+
+> ![TIP]
+> A linear combination of oscillations in time corresponds to a collection of peaks in the frequency spectrum. Furthermore, the amplitudes match.
+
+
+Let's combine the results from the previous section and
+linearity of the fourier transform to see what happens to a complex signal:
+
+- $\mathscr{F}f = \mathscr{F}\sum_n a_n C_n = \sum_n a_n \mathscr{F} C_n = \sum_n a_n \delta_n$
+- $\mathscr{F}^{-1}f = \mathscr{F}^{-1}\sum_n a_n \delta_n = \sum_n a_n \mathscr{F}^{-1} \delta_n = \sum_n a_n C_n$
+- So $\sum_n a_n C_n \leftrightarrow \sum_n a_n \delta_n$
