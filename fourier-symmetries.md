@@ -120,16 +120,12 @@ Let's take a general function of circle functions $f = \sum_n a_n C_n$ where $n$
     since it reverses the order of the indices
     - To have this symmetry, for all $n$, the coefficients must obey $C_n = C_{-n}$
     - In other words, `f rev = f`
-- $R_2$: $\mathscr{F} \overline{\sum_n a_n C_n(-t)} = \mathscr{F}\sum_m \overline{a_n} C_{n} = \sum_n \overline{a_n} \delta_n$
-    - Note: i'm using complex conjugate $z \mapsto \overline{z}$ to handle the $y \to -y$ part
-    - Let's refer to this transformation of coefficients as `conj` for complex conjugate
-    - The symmetry condition here is $a_n = \overline{a_n}$
-    - This is equivalent to saying that $a_n$ must be real
-    - In terms of coefficients,  `conj f = f`
+- $R_2$: $\mathscr{F}\sum_n -a_nC_n(-t) = -\mathscr{F}\sum_n a_n C_{-n} = -\mathscr{F}\sum_n a_{-n}C_n = -\sum_n a_{-n}\delta_n$
+    - let's define the transformation `neg(z) = -z`on complex coefficients
+    - so here we need `neg f rev = f`, i.e. reverse the order of coefficient frequencies, then negate the result
 - $T_d$: $\mathscr{F} \sum_n a_n C_n(t + d) = \mathscr{F}\sum_n a_n C_n (t)C_n(d) = \sum_n C_n(d)a_n \delta_n$
     - A phase shift in time corresponds to a rotation of the coefficients proportional to the frequency, since $C_n(d) = e^{i 2 \pi n d}$ which under complex multiplication acts like a rotation
-    - Let's call this transformation of coefficients $R_{nd}$
-    - TODO: Why does the rotation depend on frequency? I think it has to do with the fact that at higher frequencies, you fit more cycles of the wave in one period
+    - Let's call this transformation of coefficients $R_{nd}$. Note that this transformation is frequency dependent!
     - The symmetry condition is that $a_n = C_n(d)a_n$
         - So $1 = C_n(d) = e^{i 2 \pi n d}$
         - This is only true for $2 \pi n d = 2 \pi k$ for some integer $k$
@@ -145,11 +141,8 @@ Let's take a general function of circle functions $f = \sum_n a_n C_n$ where $n$
     - So we need coefficients 0 except when $C_n(1/N) = 1$
     - So the coefficients we keep are $n/N$ is an integer
     - In other words, we filter for oscillations at frequencies $..., -3N, -2N, -N, 0, N, 2N, 3N, ...$
-- $\gamma_d$: $\mathscr{F} \overline{\sum_n a_n C_n(t + d)} = \mathscr{F} \sum_n \overline{a_n} C_{-n}(t + d) = \mathscr{F} \sum_n \overline{a_n} C_{-n}(t)C_{-n}(d) = \mathscr{F}\sum_m\overline{a_{-m}}C_m(d)C_m = \sum_m \overline{a_{-m}}C_m(d)\delta_m$
-    - Symmetry condition: `R(md) * conj f rev = f`
-
-> ![CAUTION]
-> TODO I need to finish this section
+- $\gamma_d$: $\mathscr{F} \sum_n -a_n C_n(t + d) = \mathscr{F} \sum_n -a_n C_{-n}(t + d) = \mathscr{F} \sum_n -a_n C_{-n}(t)C_{-n}(d) = \mathscr{F}\sum_m -a_{-m} C_m(d)C_m = \sum_m -a_{-m}C_m(d)\delta_m$
+    - Symmetry condition: `R(md) * neg f rev = f`
 
 Aside: Much of the above is inspired by the same book, _Creating Symmetry_. That chapter on parametric curves is most relevant here. Farris goes on to explore more general Fourier series in the complex plane.
 
@@ -180,19 +173,16 @@ Usually sinusoids are described as single peaks, but that ignores negative frequ
 
 ## Symmetries of sine and cosine in frequency space
 
-> ![CAUTION]
-> I did something wrong above, I'm getting the wrong symmetries.
-
 Let's look at the coefficients for $\sin_n$:
 
 - $a_n = -\frac{1}{2}i, a_{-1} = \frac{1}{2}i$
-    - So $a_n = -a_{-n} = e^{i \pi} a_{-n} = e^{i 2 \pi n (1/(2n))} a_{-n} = C_n(2n)a_{-1}$
-    - Both are imaginary, so sine does not have $X$ symmetry
+    - $a_n = -a_{-n}$, so we have `a = neg a rev` which corresponds to $R_2$ symmetry, i.e. sine is an odd function.
+    - Both coefficients are imaginary, so sine does not have $X$ symmetry
 
 TODO: I think I did something wrong somewhere earlier on this page... 
 
 Now let's lok at $\cos_n$:
 
 - $a_n = a_{-n} = \frac{1}{2}$
-    - Since this has `rev` symmetry, we have $R$ symmetry
-    - Since all the coefficients are real, we have $X$ symmetry
+    - Since this has `rev` symmetry, we have $X$ symmetry
+    - 
