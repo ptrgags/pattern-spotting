@@ -8,8 +8,7 @@ IMG: diagram of the symmetries
 
 - visual [symmetries](../patterns/symmetry.md) of the keyboard layout
     - `translate(12)` - Every time you move up the keyboard by 12 keys, the pattern of black and white keys looks the same.
-    - `reflect(D)` - if you were to flip the keyboard backwards using a mirror placed on one of the D keys, you end up with the same pattern of black and white keys.
-    Here, we're assuming that 
+    - `reflect(D)` - if you were to flip the keyboard backwards using a mirror placed on one of the D keys, you end up with the same pattern of black and white keys. 
     - `reflect(G#)` - The same thing happens if you place the mirror at a G# on the keyboard.
 - [Euclidean Rhythms](../patterns/euclidean-rhythms.md)
     - Euclidean rhythm `E(n, k)` puts $k$ objects into $n$ slots as evenly as possible.
@@ -19,6 +18,21 @@ IMG: diagram of the symmetries
     - If you play across the white keys, you get a [diatonic scale](../patterns/diatonic-scale.md).
     - If you play across the black keys, you get a [pentatonic scale](../patterns/pentatonic-scale.md)
     - If you move across the keyboard in fix-sized steps you get what I'll call [uniform scale](../patterns/uniform-scale.md) for lack of a better term
+- Semitones and Frequency
+    - The keys of a piano keyboard are one semitone (half-step) apart
+    - Octaves, semitones and cents form a [logarithmic scale for frequency](../patterns/frequency-log-scale.md).
+    - You could theoretically [extend the keyboard forever](../patterns/infinite-piano.md) in both directions.
+    - However, there's a practical limitation: Humans can only hear between 20 Hz and 20 kHz, a range of about 10 octaves
+
+<details>
+<summary>"a range about 10 octaves"</summary>
+
+Since an octave is a ratio of 2:1, we can compute the octave range for human hearing using the formula:
+
+$O = \log_2(f_{max}/f_{min}) = \log_2(20,000/20) = \log_2(1000) \approx 9.97$
+
+So a little shy of 10 octaves for an ideal human listener. In practice, not everyone can hear the full range (especially in the high end).
+</details>
 
 ## Variations
 

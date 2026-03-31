@@ -24,6 +24,8 @@ These pages give examples of where patterns can be found. They'll point out patt
 
 ## Patterns
 
+These pages describe specific patterns and point out examples across various disciplines.
+
 - [Symmetry](./patterns/symmetry.md)
 
 ## New Creations
