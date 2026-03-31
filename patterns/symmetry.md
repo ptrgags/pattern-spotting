@@ -47,8 +47,16 @@ So when I write $I$ without a subscript, I mean
 
 ## Symmetry as fixing points
 
+TODO
+
 ## Symmetry as fixing sets
+
+TODO
 
 ## Symmetry as fixing functions
 
+TODO
+
 ## Generalized symmetry
+
+TODO

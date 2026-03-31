@@ -1,0 +1,3 @@
+# Pattern: Pentatonic Scale
+
+TODO
