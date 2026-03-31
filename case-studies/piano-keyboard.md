@@ -38,7 +38,11 @@ So a little shy of 10 octaves for an ideal human listener. In practice, not ever
 
 - Isomorphic Keyboards
     - The piano keyboard layout is due to hundreds of years of history. Yet it's not the only way to arrange the 12 notes of the chromatic scale. [Isomorphic keyboards (wiki)](https://en.wikipedia.org/wiki/Isomorphic_keyboard) are layouts where musical intervals have the same shape anywhere on the keyboard.
-    - [Rectangular Iso Keyboard](../patterns/rect-iso-piano.md) - The simplest thing is to make a 2D grid of pitches with a fixed step size in each direction 
+    - [Linear Iso Keyboard](../patterns/linear-iso-keyboard.md)
+        - The piano roll in a DAW uses this format
+        - The [Dodeka keyboard (wiki)](https://en.wikipedia.org/wiki/Dodeka_keyboard) is another example
+    - [Rectangular Iso Keyboard](../patterns/rect-iso-piano.md) - A 2D grid of pitches with a fixed step size in each direction 
         - [Bass Fretboards](./bass-fretboard.md) are one such example.
         - [Guitar Fretboards](./guitar-fretboard.md) _almost_ match this pattern.
     - [Hexagaonal Iso Keyboard](../patterns/hex-iso-piano.md) - If you put the notes on a hex grid with some slight modifications, you get an even
+- [Ring Keyboard](../patterns/ring-keyboard.md) - If you ignore the octave of notes, they keyboard loops around. You could draw this as a circular ring
