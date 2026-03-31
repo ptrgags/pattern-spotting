@@ -6,10 +6,12 @@
 
 ![Diagram of the translation and reflection symmetries of the piano keyboard](./figures/piano-keyboard-symmetries.png)
 
-- visual [symmetries](../patterns/symmetry.md) of the keyboard layout
+- visual [symmetries](../patterns/symmetry.md) of the keyboard layout[^1]
     - `translate(12)` - Every time you move up the keyboard by 12 keys, the pattern of black and white keys looks the same.
     - `reflect(D)` - if you were to flip the keyboard backwards using a mirror placed on one of the D keys, you end up with the same pattern of black and white keys. 
     - `reflect(G#)` - The same thing happens if you place the mirror at a G# on the keyboard.
+
+[^1]: Here, I'm imagining the keyboard to be [infinitely long](../patterns/infinite-piano.md) for symmetry in the strict sense. Another possible view is that the keyboard finite, and the symmetry relationships hold everywhere on the keyboard _except at the ends_.
 
 IMG: Diagram of `E(12, 5) and E(12, 7)` compared with the piano keyboard
 

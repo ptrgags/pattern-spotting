@@ -18,7 +18,7 @@ up-and-down arpeggio pattern in music:
 
 ## Case Studies
 
-These pages give examples of where patterns can be found. They'll point out patterns
+These pages give examples of where patterns can be found. Some will be patterns used in my creative projects, others will be patterns I find in the world.
 
 - [Piano Keyboard](./case-studies/piano-keyboard.md)
 
