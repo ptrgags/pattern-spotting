@@ -1,0 +1,3 @@
+# Pattern: Diatonic Scale
+
+TODO
