@@ -1,10 +1,9 @@
 # Pattern Spotting
 
-In all my creative works, I'm always making use of patterns. This includes
-everything from concrete visual and musical patterns to abstract mathematical 
-patterns.
+A key theme in all my creative works is the use of patterns. This includes
+everything from concrete visual patterns to abstract mathematical ones.
 
-This repository is for me to catalogue notable patterns with examples
+This repository is a catalog of patterns with examples
 and recipes for implementing them. I'm particularly interested in exploring
 connections between disciplines. For example, the following diagram
 might represent a zig-zag frieze pattern in art, or perhaps an
@@ -17,7 +16,22 @@ up-and-down arpeggio pattern in music:
 -      --      --      --      -
 ```
 
-## Index
+## Case Studies
+
+These pages give examples of where patterns can be found. They'll point out patterns
+
+- [Piano Keyboard](./case-studies/piano-keyboard.md)
+
+## Patterns
+
+- [Symmetry](./patterns/symmetry.md)
+
+## New Creations
+
+## Old Pages
+
+⚠️ This section was from an older revision. these pages will probably be
+reorganized/rewritten over time.
 
 Patterns:
 
