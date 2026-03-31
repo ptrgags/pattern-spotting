@@ -10,6 +10,9 @@
     - `translate(12)` - Every time you move up the keyboard by 12 keys, the pattern of black and white keys looks the same.
     - `reflect(D)` - if you were to flip the keyboard backwards using a mirror placed on one of the D keys, you end up with the same pattern of black and white keys. 
     - `reflect(G#)` - The same thing happens if you place the mirror at a G# on the keyboard.
+- The symmetry operations of the keyboard exactly directly to [musical symmetries](../patterns/musical-symmetries.md)
+    - `translate(n) <-> transpose(n)` - translating to the right by $n$ keys is the same as transposing the pitch by $n$ semitones
+    - `reflect(n) <-> invert(n)` - reflecting the keyboard through key $n$ (or even halfway between two adjacent keys) is the same as musical inversion through pitch $n$ in semitones from the lowest note of the keyboard.
 
 [^1]: Here, I'm imagining the keyboard to be [infinitely long](../patterns/infinite-piano.md) for symmetry in the strict sense. Another possible view is that the keyboard finite, and the symmetry relationships hold everywhere on the keyboard _except at the ends_.
 
