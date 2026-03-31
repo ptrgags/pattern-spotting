@@ -1,19 +1,24 @@
 # Case Study: Piano Keyboard
 
-IMG: A couple octaves of a piano keyboard
+![Diagram of a 3-octave piano keyboard](./figures/piano-keyboard-thumbnail.png)
 
 ## Patterns
 
-IMG: diagram of the symmetries
+![Diagram of the translation and reflection symmetries of the piano keyboard](./figures/piano-keyboard-symmetries.png)
 
 - visual [symmetries](../patterns/symmetry.md) of the keyboard layout
     - `translate(12)` - Every time you move up the keyboard by 12 keys, the pattern of black and white keys looks the same.
     - `reflect(D)` - if you were to flip the keyboard backwards using a mirror placed on one of the D keys, you end up with the same pattern of black and white keys. 
     - `reflect(G#)` - The same thing happens if you place the mirror at a G# on the keyboard.
+
+IMG: Diagram of `E(12, 5) and E(12, 7)` compared with the piano keyboard
+
 - [Euclidean Rhythms](../patterns/euclidean-rhythms.md)
     - Euclidean rhythm `E(n, k)` puts $k$ objects into $n$ slots as evenly as possible.
     - Up to cyclic shift, the black keys within an octave match the pattern of `E(12, 5)`
     - The white keys then are the complimentary pattern `E(12, 7)`
+
+![single color scales](./figures/piano-keyboard-single-color-scales.png)
 - Musical Scales
     - If you play across the white keys, you get a [diatonic scale](../patterns/diatonic-scale.md).
     - If you play across the black keys, you get a [pentatonic scale](../patterns/pentatonic-scale.md)
@@ -45,4 +50,4 @@ So a little shy of 10 octaves for an ideal human listener. In practice, not ever
         - [Bass Fretboards](./bass-fretboard.md) are one such example.
         - [Guitar Fretboards](./guitar-fretboard.md) _almost_ match this pattern.
     - [Hexagaonal Iso Keyboard](../patterns/hex-iso-piano.md) - If you put the notes on a hex grid with some slight modifications, you get an even
-- [Ring Keyboard](../patterns/ring-keyboard.md) - If you ignore the octave of notes, they keyboard loops around. You could draw this as a circular ring
+- [Ring Keyboard](../patterns/ring-keyboard.md) - If you ignore the octave of notes, they keyboard loops around. You could draw this as a circular ring.
