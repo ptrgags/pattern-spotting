@@ -28,7 +28,7 @@ These pages describe specific patterns and point out examples across various dis
 
 - [Symmetry](./patterns/symmetry.md)
 - Musical Pitch
-   - [Logarithmic Frequency Scale](./patterns/frequency-log-scale.md)
+   - [Logarithmic Frequency Scale](./patterns/frequency-log-scale.md) - octaves and semitones
    - [Halfway up the Octave](./patterns/half-octave.md)
 
 ## New Creations
