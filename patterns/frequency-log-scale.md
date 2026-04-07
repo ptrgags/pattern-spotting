@@ -1,6 +1,6 @@
 # Pattern: Logarithmic Frequency Scale
 
-IMG: Diagram that relates pitch ratio to octaves/semitones/cents
+![Diagram that relates pitch ratio to octaves/semitones/cents](figures/log-freq-relationships.png)
 
 - A frequency ratio $f_2/f_1$ measures how fast frequency $f_2$ is compared to a reference frequency $f_1$.
 - An octave is a frequency ratio of 2. 
@@ -24,7 +24,7 @@ cents(f2, f1) = 1200 * log_2(f2/f1)
 
 ## MIDI Notes and Piano Keys
 
-IMG: Diagram of the relationship between semitones, piano keys, and MIDI notes.
+![Diagram of a range of pitches labeled both with piano key numbers and MIDI note numbers](figures/log-freq-keys-midi.png)
 
 Assuming standard tuning where $A_4 = 440$ Hz, and the first key on a piano is $A_0$ (see [piano key frequencies (wiki)](https://en.wikipedia.org/wiki/Piano_key_frequencies)), we have:
 

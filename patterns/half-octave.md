@@ -5,7 +5,7 @@ What musical interval is halfway up the octave? It depends on how you measure it
 
 ## Halfway as a Ratio
 
-IMG: Frequency axis with 660 Hz shown as the midpoint of 440 Hz and 880 Hz
+![diagram showing 660 Hz as halfway between 440 Hz and 880 Hz](./figures/half-octave-hz.png)
 
 > In terms of ratios, halfway is a 3:2 ratio, i.e. a (just) perfect fifth
 
@@ -33,7 +33,7 @@ So the difference is about 2 cents flat, which is very tiny!
 
 ## Halfway in Semitones
 
-IMG: Piano keyboard with tritone shown as midpoint between a C and the C an octave higher
+![diagram showing how 6 semitones is halfway between C and the C an octave higher](figures/half-octave-semitones.png)
 
 > A tritone is halfway up the octave when measured in semitones
 
