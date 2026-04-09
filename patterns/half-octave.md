@@ -11,9 +11,9 @@ What musical interval is halfway up the octave? It depends on how you measure it
 
 Suppose we start at pitch $p$. One octave above this is pitch $2p$. So halfway between this would be a ratio that's the midpoint between 1 and 2. that is, 1.5, or a 3:2 ratio.
 
-In the harmonic series, a 3:2 ratio is a perfect fifth! However, this would be a perfect fifth in [just intonation (wiki)](https://en.wikipedia.org/wiki/Just_intonation).
+In the harmonic series, a 3:2 ratio is a perfect fifth! Specifically, the perfect fifth from [just intonation (wiki)](https://en.wikipedia.org/wiki/Just_intonation).
 
-However, most modern instruments use [12-tone equal temperament (wiki)](https://en.wikipedia.org/wiki/12_equal_temperament) for tuning. The perfect fifth in 12-TET is flat by 2 cents
+However, many instruments use [12-tone equal temperament (wiki)](https://en.wikipedia.org/wiki/12_equal_temperament) for tuning. The perfect fifth in 12-TET is flat by 2 cents.
 
 <details>
 <summary>"flat by 2 cents"</summary>
