@@ -29,13 +29,18 @@ cents(f2, f1) = 1200 * log_2(f2/f1)
 Assuming standard tuning where $A_4 = 440$ Hz, and the first key on a piano is $A_0$ (see [piano key frequencies (wiki)](https://en.wikipedia.org/wiki/Piano_key_frequencies)), we have:
 
 ```
-key(A_0) = 0
-key(A4) = 48 (4 octaves above A_0)
+key(A0) = 0
+key(A4) = 48 (4 octaves above A0)
 key(f) = key(A4) + semi(f, A4)
        = 48 + 12 log_2(f / 440) semitones
 ```
 
-The MIDI spec[^1] only specifies that note 60 is "middle C", it does not specify the octave number. I prefer to use [scientific pitch notation (wiki)](https://en.wikipedia.org/wiki/Scientific_pitch_notation), which defines middle C as $C_4$. Combining the two, we have:
+The MIDI specification only requires that note 60 is middle C, the "middle C of an 88 note piano-style keyboard"[^1]. It does not, however, specify the octave number of Middle C. I prefer to use [scientific pitch notation (wiki)](https://en.wikipedia.org/wiki/Scientific_pitch_notation), which defines middle C as $C_4 $. Music software may use other conventions.
+
+
+[^1]: MIDI 1.0 Detailed Specification, v4.2.1, page 10. MIDI Manufacturer's Association, 1996.
+
+Combining the two, we have:
 
 ```
 midi(C4) = 60
