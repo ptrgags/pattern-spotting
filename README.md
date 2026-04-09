@@ -27,6 +27,9 @@ These pages give examples of where patterns can be found. Some will be patterns 
 These pages describe specific patterns and point out examples across various disciplines.
 
 - [Symmetry](./patterns/symmetry.md)
+- Musical Pitch
+   - [Logarithmic Frequency Scale](./patterns/frequency-log-scale.md) - octaves and semitones
+   - [Halfway up the Octave](./patterns/half-octave.md)
 
 ## New Creations
 
