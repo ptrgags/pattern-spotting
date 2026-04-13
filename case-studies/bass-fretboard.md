@@ -31,12 +31,19 @@ If we erase the octave numbers, we get the pitch classes. Notice that the same l
 If instead we erase the letters, we get the octave numbers.
 Here, we get a diagonal [gradient](../patterns/gradient.md) from the low E string, increasing slowly both down the string and across the strings.
 
+🚧 TODO: more related patterns:
+
+- Decomposing the pitch into pitch class/octaves means pitch is
+(isomorphic to) `pitch class x octave` (categorical product)
+- The structure of the fretboard is a `(m2, P4)` [Rectangular Iso Keyboard](../patterns/rect-iso-piano.md)
+
+
 ## Pitch Symmetries
 
 Studying the diagrams from the previous diagram,
 we can identify some [symmetries](../patterns/symmetry.md). First, let's look at the absolute pitches again:
 
-![Diagram illustrating with arrows pointing out the relationships described below](figures/bass-fretboard-note-symmetries.png)
+![Diagram illustrating with arrows pointing out the relationships described below](figures/bass-fretboard-pitch-symmetries.png)
 
 - When we move 5 frets down the string, then over to the next lowest string, the pitch is exactly the same.
 - When we move 2 frets down the string, and 2 strings up, we get a pitch exactly one octave (a perfect eighth) higher.
@@ -63,34 +70,61 @@ So if `pitch_class(frets, strings)` is a function that returns the pitch class, 
 - `translate(-5, 1)`-symmetry
 - `translate(2, 2)`-symmetry
 
-TODO: If you include octave, the symmetry is changed:
+## Semtione Distance Function
 
+IMG: Fretboard labeled with semitones above E1
 
+A different way of thinking about the fretboard is as a [distance function](../patterns/distance-function.md) that measures semitones
+as measured from the lowest note (E0).
 
+Observing that,
 
-![bass fretboard with frets numbered with number of semitones from the open E string. Two arrows are drawn on top. One moves along a string, showing that each fret is +1 semitone. Another points across the strings, showing that each string is +5 semitones higher than the next lower string](figures/bass-fretboard-semitones.png)
+- Moving down the string by +1 fret increases the pitch by 1 semitone 
+- The tuning `E1 A1 D2 G2` means the strings are tuned a perfect fourth apart. In other words, as we move up +1 string, we increase the pitch by 5 semitones.
 
-- The structure of the fretboard is a [Rectangular Iso Keyboard](../patterns/rect-iso-piano.md). The above diagram replaces the note labels with semitones above the lowest note (E on the open E string) to illustrate this
-    - As mentioned above, moving down the string results in increasing the pitch by 1 semitone, i.e. a minor second
-    - E, A, D, G are each 5 semitones, i.e. a perfect fourth apart. So moving up one string increases the pitch by a perfect fourth
-    - So this is a `(m2, P4)` isometric keyboard, but cropped to the number of strings and frets on the neck of the bass.
+we can define the distance function directly as:
 
-![The semitone diagram, but now there are many parallel stripes drawn diagonally across the fretboard. The thicker black stripes mark every octave above the lowest note. The many narrow blue lines mark the 12 semitones between octaves.](figures/bass-fretboard-stripes.png)
+```
+semi(fret, string) = fret + 5 * string
+```
 
-- Since we increase pitch in two different directions, there are several copies of most notes. Imagine 
-    - Visually, this looks like a set of parallel [stripes](../patterns/stripes.md)
-    - You could interepret this as a [plane wave](../patterns/plane-wave.md)
-- If you gather up one fret from each pitch class, you can make a [chromatic scale](../patterns/uniform-scale.md). See [§ Scales on a Fretboard](#scales-on-a-fretboard) below for more details
+If we plot this function over a fretboard, we
+get a [gradient](../patterns/gradient.md) stretching diagonally across the fretboard.
+
+IMG: Diagram of fretboard with diagonal lines acting as a semitone ruler, with octaves drawn in a thicker line.
+
+## Pitch Class Plane Waves
+
+What about pitch classes? Since they repeat across the fretboard, it won't be a distance function. However, there are still patterns to be found.
+
+Each pitch class corresponds to a number of semitones in `[0, 11]`. Usually they're numbered from C, but since the lowest note is an E, we'll measure it from E.
+
+![Diagram of fretboard labeled by pitch class but in semitones, not letter names](figures/bass-fretboard-semitones.png)
+
+Given the semitone distance function `semi()` from the previous section, it's easy to 
+
+```
+pc(fret, string) = mod(semi(fret, string), 12)
+```
+
+Plotting this on the fretboard, we get a set of parallel lines:
+
+![Diagram showing lines connecting the same pitch classes](figures/bass-fretboard-stripes.png)
+
+A couple possible interpretations of this pattern:
+
+- A repeating pattern of [stripes](../patterns/stripes.md)
+- A [plane wave](../patterns/plane-wave.md) with (linear) wavevector of `(1, 5)` semitones/step
+- A [wallpaper pattern](../patterns/wallpaper-pattern.md) with `o` symmetry (orbifold notation) generated by translations (5, -1) and (2, 2).
 
 ## Scales on a Fretboard
 
-To make a scale on a fretboard, we need to make
-a (somewhat irregular) box around 12 distinct pitches. There many ways to do this, so let's define some constraints:
+To make a scale on a fretboard, we can draw a contiguous box around 12 distinct pitches to form a [chromatic scale](../patterns/uniform-scale.md) Given that there are many copies of each note available, there are several ways to do this. Let's define some constraints to narrow our search:
 
-- The box should use as few frets as possible. This helps to limit moving one's hand up and down the string
-- Let's examine pitches within a single octave.
+- For playability, the box shouldn't be too wide to avoid large jumps up/down the string.
+- Let's focus on pitches within a single octave for simplicity.
 
-With these constraints, we get 5 possible scale boxes, each one shifting one fret down the string from the previous one. Since semitones are arranged in diagonal fashion, the box changes shape slightly.
+With these constraints, we get 5 possible scale box shapes, each one shifting one fret down the string from the previous one. Since semitones are arranged in diagonal fashion, the box changes shape slightly.
 
 ![box shape 1. The root note is in the bottom right. This one extends across 4 strings](figures/bass-scale1.png)
 ![box shape 2. The leftmost column of notes are moved to the bottom right](figures/bass-scale2.png)
@@ -98,6 +132,12 @@ With these constraints, we get 5 possible scale boxes, each one shifting one fre
 ![box shape 4](figures/bass-scale4.png)
 ![box shape 5. Now the root note is on the bottom left](figures/bass-scale5.png)
 
-TODO: This is related to fundamental domains
-TODO: If you ignore octave, the scale boxs fit together in a p1 wallpaper pattern
+🚧 TODO: related concepts and patterns. Quick outline for now:
+
+- A scale box is an example of a fundamental domain
+    - Need to clarify what this means for gradients, as we have `(translate, transpose)` symmetry, not the usual `translate` symmetry
+    - Fundamental domains are related to quotient spaces
+    - also sections/retractions in category theory
+- You can fit many copies of the scale box to make a tiling, the symmetries match the symmetries of the underlying pitches
+- Translating the scale box by some other translation amount results in a _transposed_ scale.
 
