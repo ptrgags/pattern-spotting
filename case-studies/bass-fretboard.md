@@ -6,7 +6,7 @@ Patterns
 
 ![Diagram of bass fretboard with note names listed. Notes from the C major scale are colored in red, sharps are colored in blue](figures/bass-fretboard-notes.png)
 
-In standard tuning, a bass guitar's strings are tuned to E, A, D, and G from bottom to top. As you move down the string, each fret increases the pitch by one semitone. The diagram above labels these pitches. There are several patterns hiding here:
+In standard tuning, a bass guitar's strings are tuned to E, A, D, and G from bottom to top. As you move down the string, each fret increases the pitch by one semitone. The diagram above labels the pitch classes. There are several patterns hiding here:
 
 ![bass fretboard with frets numbered with number of semitones from the open E string. Two arrows are drawn on top. One moves along a string, showing that each fret is +1 semitone. Another points across the strings, showing that each string is +5 semitones higher than the next lower string](figures/bass-fretboard-semitones.png)
 
@@ -23,8 +23,6 @@ In standard tuning, a bass guitar's strings are tuned to E, A, D, and G from bot
 - If you gather up one fret from each pitch class, you can make a [chromatic scale](../patterns/uniform-scale.md). See [§ Scales on a Fretboard](#scales-on-a-fretboard) below for more details
 
 ## Scales on a Fretboard
-
-TODO: Maybe this should be a separate case study
 
 To make a scale on a fretboard, we need to make
 a (somewhat irregular) box around 12 distinct pitches. There many ways to do this, so let's define some constraints:
