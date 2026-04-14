@@ -252,7 +252,7 @@ What about the top end of the table? From inspection, it looks like the pattern 
 ```
 
 <details>
-<summary>Two Proof sketches</summary>
+<summary>Two proof sketches</summary>
 
 - Apply the same process but in the other direction
     - Start at 1 _Lydian_
@@ -278,3 +278,21 @@ TODO: I want to make a demo of this in `p5-sketchbook`; that will take some time
 
 There are 12 possible tonic notes, and 7 possible
 modes. So `12 * 7 = 84` possible modes.
+
+## Modes in Solfege
+
+Another way to present the results of [§ Modes Ordered by Flats](#modes-ordered-by-flats) is using [moveable do solfege](./movable-do-solfege.md). Each scale degree is turned into
+a syllable that can be sung.
+
+```
+Flats   Solfege                           Mode
+-1     (Do) Re  Mi  Fi  So  La  Ti (Do)   Lydian
+ 0      Do  Re  Mi (Fa) So  La  Ti  Do    Ionian
+ 1      Do  Re  Mi  Fa  So  La (Te) Do    Mixolydian
+ 2      Do  Re (Me) Fa  So  La  Te  Do    Dorian
+ 3      Do  Re  Me  Fa  So (Le) Te  Do    Aeolian
+ 4      Do (Ra) Me  Fa  So  Le  Te  Do    Phrygian
+ 5      Do  Ra  Me  Fa (Se) Le  Te  Do    Locrian
+```
+
+SOUND: Solfege clips for each mode
