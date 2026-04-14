@@ -30,6 +30,8 @@ These pages describe specific patterns and point out examples across various dis
 - Musical Pitch
    - [Logarithmic Frequency Scale](./patterns/frequency-log-scale.md) - octaves and semitones
    - [Halfway up the Octave](./patterns/half-octave.md)
+   - [Diatonic Modes](./patterns/diatonic-modes.md)
+   - [Movable Do Solfege](./patterns/movable-do-solfege.md)
 
 ## New Creations
 
