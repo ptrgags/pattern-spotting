@@ -17,10 +17,9 @@
 
 ![Diagram of bass fretboard with pitches labeled in scientific pitch notation from E1 to G3 labeled. Notes from the C major scale are written in red, while the sharps are drawn in blue.](figures/bass-fretboard-pitches.png)
 
-In standard tuning, a bass guitar's strings are tuned to `E1, A1, D2, G2`. As you move down the string, each fret increases the pitch by one semitone. The diagram above shows all the pitches for the first 12 frets of the fretboard.
+In standard tuning, a bass guitar's strings are tuned to `E1, A1, D2, G2`, each 5 semitones (a perfect fourth) higher than the previous one. As you move down one of the strings, each fret increases the pitch by one semitone (minor second). Together this makes a partial `(m2, P4)` [isomorphic keyboard](../patterns/rect-iso-piano.md).
 
-There's a lot going on in the above diagram, so let's break down
-the pitches into pitch classes and octaves:
+Listing the pitches is a lot to absorb at once, so it's helpful to break down the pitches into pitch classes and octave numbers.
 
 ![Fretboard with pitch classes labeled. This is the same as the previous diagram, but with the octave numbers removed](figures/bass-fretboard-pitch-classes.png)
 
@@ -30,12 +29,6 @@ If we erase the octave numbers, we get the pitch classes. Notice that the same l
 
 If instead we erase the letters, we get the octave numbers.
 Here, we get a diagonal [gradient](../patterns/gradient.md) from the low E string, increasing slowly both down the string and across the strings.
-
-🚧 TODO: more related patterns:
-
-- Decomposing the pitch into pitch class/octaves means pitch is
-(isomorphic to) `pitch class x octave` (categorical product)
-- The structure of the fretboard is a `(m2, P4)` [Rectangular Iso Keyboard](../patterns/rect-iso-piano.md)
 
 
 ## Pitch Symmetries
