@@ -125,8 +125,9 @@ With these constraints, we get 5 possible scale box shapes, each one shifting on
 ![box shape 4](figures/bass-scale4.png)
 ![box shape 5. Now the root note is on the bottom left](figures/bass-scale5.png)
 
-🚧 TODO: related concepts and patterns. Quick outline for now:
+🚧 Still under construction... rough outline for now
 
+- Once you pick a scale box, you have a chromatic scale. To get other scales, you just skip some notes.
 - A scale box is an example of a fundamental domain
     - Need to clarify what this means for gradients, as we have `(translate, transpose)` symmetry, not the usual `translate` symmetry
     - Fundamental domains are related to quotient spaces
@@ -134,3 +135,13 @@ With these constraints, we get 5 possible scale box shapes, each one shifting on
 - You can fit many copies of the scale box to make a tiling, the symmetries match the symmetries of the underlying pitches
 - Translating the scale box by some other translation amount results in a _transposed_ scale.
 
+## Other Details
+
+🚧 This section is an outline for related topics and patterns I haven't yet written about
+
+- The [circle of fourths](../patterns/uniform-scale.md) progression jumps around the bass fretboard a lot
+    - If there were unlimited strings a fourth apart, you could just go across the strings forever
+    - However, we only have 4 strings, so we have to do a mix of moving up by fourths and down by fifths (two different ways to do this)
+- Though you typically don't strum chords on bass, chord shapes are still relevant for e.g. arpeggios. 
+    - This might go in the iso keyboard page
+    - the guitar fretboard will have additional shapes due to the top two strings tuned down a half step which breaks the pattern
