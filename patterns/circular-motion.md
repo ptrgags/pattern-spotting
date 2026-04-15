@@ -84,3 +84,11 @@ This is easiest to show in complex numbers, since complex conjugation $z \mapsto
 $$\overline{C_n(t)} = \overline{e^{i 2 \pi n t}} = e^{-i 2\pi n t} = C_{-n}(t) $$
 
 </details>
+
+## Related Patterns
+
+- [Sine and Cosine as Circular Motion](./sin-cos-circle.md)
+- [Lissajous Patterns](./lissajous.md)
+- [Rose Curves](./rose-curves.md)
+- [Fourier Transform](./fourier-transform.md)
+- [Hypotrochoids and Epitrochoids](./trochoids)
