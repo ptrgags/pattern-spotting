@@ -1,6 +1,6 @@
 # Sine and Cosine as Circular Motion
 
-TODO: Outline for now
+🚧 Outline for now
 
 - IMG: Cosine and sine diagrams
 - $$\cos_n = \frac{1}{2}(C_n + C_{-n})$$
