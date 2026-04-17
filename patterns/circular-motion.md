@@ -28,7 +28,7 @@ Both views have their uses. The trajectory view is visually intuitive. Meanwhile
 
 ## Frequency Conventions
 
-There are multiple conventions for frequency
+There are multiple conventions for frequency:
 
 - As an angular velocity (aka angular frequency): $\omega$, measured in radians/sec
 - As a linear frequency $f$ in cycles/sec (Hz).
