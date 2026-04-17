@@ -1,5 +1,7 @@
 # Lissajous Patterns
 
+🚧 Outline for now
+
 - One representation for [Uniform Circular Motion](./circular-motion.md) is $C_n(t) = \cos_n + i\sin_n$ with a single frequency $n$
 - What if we allow each sinusoid to have a different frequency? $a, b$
 - Let's define $$L_{a, b} = \cos_a + i \sin_b$$
@@ -19,3 +21,6 @@
 - Why stop there? we can always add more waves together
 - [Desmos graph](https://www.desmos.com/calculator/zxabmczkq3) -- Adding two different Lissajous curves
     - Interestingly, some settings produce [rose curves](./rose-curves.md)!
+
+<!-- Quick test, something tells me Desmos embeds won't work for security reasons -->
+<iframe src="https://www.desmos.com/calculator/zxabmczkq3?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
