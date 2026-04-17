@@ -1,5 +1,7 @@
 # Lissajous Patterns
 
+![Desmos graph of a Lissajous curve](figures/lissajous-example.png)
+
 🚧 Outline for now
 
 - One representation for [Uniform Circular Motion](./circular-motion.md) is $C_n(t) = \cos_n + i\sin_n$ with a single frequency $n$
@@ -19,8 +21,10 @@
 
 - Looking at the circular motion formula, it feels kinda arbirary. We have a sum of 4 circular motions in two pairs.
 - Why stop there? we can always add more waves together
+
+![Desmos graph of sum of two Lissajous curves](figures/lissajous-sum.png)
+
 - [Desmos graph](https://www.desmos.com/calculator/zxabmczkq3) -- Adding two different Lissajous curves
     - Interestingly, some settings produce [rose curves](./rose-curves.md)!
-
-<!-- Quick test, something tells me Desmos embeds won't work for security reasons -->
-<iframe src="https://www.desmos.com/calculator/zxabmczkq3?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+- ❓What happens when you swap out the sine waves with other [basic waveforms](./basic-waves.md)
+    - Will one choice of wave produce [mirror curves](./mirror-curves.md) which look similar?

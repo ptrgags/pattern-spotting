@@ -1,5 +1,7 @@
 # Rose Curves
 
+![Desmos graph of a rose curve with 12 petals](figures/rose-curve-example.png)
+
 🚧 Outline for now
 
 - Polar curve: $r(\theta) = \cos(n\theta)$
