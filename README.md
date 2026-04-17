@@ -21,6 +21,7 @@ up-and-down arpeggio pattern in music:
 These pages give examples of where patterns can be found. Some will be patterns used in my creative projects, others will be patterns I find in the world.
 
 - [Piano Keyboard](./case-studies/piano-keyboard.md)
+- [Bass Guitar Fretboard](./case-studies/bass-fretboard.md)
 
 ## Patterns
 
@@ -32,8 +33,12 @@ These pages describe specific patterns and point out examples across various dis
    - [Halfway up the Octave](./patterns/half-octave.md)
    - [Diatonic Modes](./patterns/diatonic-modes.md)
    - [Movable Do Solfege](./patterns/movable-do-solfege.md)
-- Math
-   - [Circle Function](./patterns/circular-motion.md)
+- Periodic Motion
+   - [Uniform Circular Motion](./patterns/circular-motion.md)
+   - [Lissajous Curves](./patterns/lissajous.md)
+   - [Rose Curves](./patterns/rose-curves.md)
+   - [Trochoids](./patterns/trochoids.md)
+   
 
 ## New Creations
 
