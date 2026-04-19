@@ -1,3 +1,3 @@
-## Mirror Curves
+# Mirror Curves
 
 TODO

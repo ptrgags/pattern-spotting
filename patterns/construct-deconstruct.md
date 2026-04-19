@@ -1,7 +1,9 @@
-# Structure and Destructure
+# Construct and Deconstruct
 
-- destructure: take a value and break it down into parts
-- structure: take the parts and combine them back into the whole
+🚧 Outline for now
+
+- Deconstruct: take a value and break it down into parts
+- Construct: take the parts and combine them back into the whole
 - i.e. "equal to the sum of its parts"
 
 ## Connection: Construction IRL

@@ -38,6 +38,11 @@ These pages describe specific patterns and point out examples across various dis
    - [Lissajous Curves](./patterns/lissajous.md)
    - [Rose Curves](./patterns/rose-curves.md)
    - [Trochoids](./patterns/trochoids.md)
+- Signals
+   - [Basic Waves](./patterns/basic-waves.md) - (sine, sawtooth, etc.)
+   - [Normalized Value](./patterns/normalized-value.md)
+- Misc
+   - [Construct/Deconstruct](./patterns/structure-destructure.md) - disassemble something into its parts, then put it back together again
    
 
 ## New Creations
@@ -50,7 +55,7 @@ reorganized/rewritten over time.
 Patterns:
 
 - [Stripes](./stripes.md) - `| | | | | | | `
-- [Structure/Destructure](./structure-destructure.md) - disassemble something into its parts, then put it back together again
+
 - [Patterns in Space and Time](./space-time.md) - Comparing images, audio, animation by which space/time dimensions are used
 - [Patterns in Trigonometry](./trig-patterns.md) - Patterns that helped me learn my sine/cosine values years ago
 
