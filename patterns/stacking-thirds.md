@@ -1,6 +1,6 @@
 # Stacking Thirds
 
-IMG: Diagram of a chord as a stack of thirds
+![Diagram of a chord structure as stacking thirds between the root, third, fifth and seventh](figures/stacked-thirds.png)
 
 In music, chords are built by stacking notes that are either a major or minor third apart. This page explores the various combinations.
 
@@ -15,10 +15,13 @@ There are two types of thirds in music, the major and minor third.
 
 Examples:
 
-IMG: Make a diagram of these intervals on a keyboard
+![Diagram of C to Eb on the keyboard](figures/stacked-thirds-m3.png)
 
-- C to Eb is a difference of 3 semitones, so this is a minor third.
-- C to E is a difference of 4 semitones, so this is a major third.
+C to Eb is a difference of 3 semitones, so this is a minor third.
+
+![Diagram of C to E on the keyboard](figures/stacked-thirds-major3.png)
+
+C to E is a difference of 4 semitones, so this is a major third.
 
 
 ## Triads
