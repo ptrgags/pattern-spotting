@@ -42,8 +42,12 @@
 ## Other Notes
 
 - Derive the Fourier series for each and add them to the recipes
-- SOUND: 
+- SOUND: Make sound clips for each wave type. Maybe a short melody
 - Show what these patterns look like as visual gradients (when remapped to be unipolar)
 - Make a page about normalized ranges $[0, 1]$ = unipolar = unsigned (float) and $[-1, 1]$ = bipolar = signed (float) since these come up a lot when working with waves! even some of the formulas above make use of this
 - Maybe add unsigned ramp wave (modulo) to the list, as it's a building block used to make sawtooth and 
 - Describe the waves in terms of transforming a sine wave
+
+## Test of embedding audio clip
+
+<audio src="https://assets.ptrgags.dev/file/ptrgags-website-assets/music-albums/loops/02_2024-04-14_Bouncy.flac"></audio>
