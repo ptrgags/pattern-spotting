@@ -34,6 +34,8 @@
 
 ## Triangle Wave
 
+![Desmos graph of a triangle wave](figures/basic-waves-triangle.png)
+
 - $\text{triangle}(t)= 2\left|2\text{mod}\left(x-\frac{1}{4},\ 1\right)-1\right|\ -\ 1$
 - TODO: This one needs more explanation. You're scaling and shifting a sawtooth wave, using absolute value to fold the saw shape into triangles, and shifting again
 - `triangle = to_signed * abs * to_signed * ramp * translate(1/4)`
