@@ -41,6 +41,19 @@ IMG: Diagram of these patterns
 - C E G is a `C` (C major) chord
 - C E G# is a `C+` (C augmented) chord
 
+### Triad Semitone Patterns
+
+Another way to look at triads is the pattern
+of semitones above the root note
+
+```
+Semitones   Triad Type
+0 3 6           d
+0 3 7           m
+0 4 7           M
+0 4 8           A
+```
+
 ## Seventh Chords
 
 Seventh chords are a stack of three thirds. Or another way to think about it is take a triad and stack one more third on top.
@@ -79,6 +92,25 @@ Confusingly, there are several different notations for each chord types.
 - Dominant 7th: <sup>7</sup>, dom7
 - Major 7th: M7, Maj7, Δ
 - Augmented 7th: +7, aug7, 7#5 ("C seven sharp 5") 
+
+## Seventh Chord Semitone Patterns
+
+Again, we can also look at the pattern of
+semitones for each chord type.
+
+```
+Semitones   Seventh Chord
+0 3 6  9         o7
+0 3 6 10         ø7
+0 3 7 10         m7
+0 3 7 11        mM7
+0 4 7 10          7
+0 4 7 11         M7
+0 4 8 11         +7
+0 4 8 12          + (triad, not seventh)
+```
+
+With some slight tweaks, this table can be turned into a [spooky chord progression](./spooky-sevenths-progression.md)
 
 ## Seventh Chord Relationships
 
@@ -124,4 +156,3 @@ If you swap `m <--> M`, the seventh chords pair up in the following way:
 - SOUND: sound clips of these chords (both as harmony and arpeggiated) would be helpful
 - Related patterns
     - Connections between this and [diatonic modes](./diatonic-modes.md) and chords (both triads and sevenths)
-    - [Spooky Sevenths Progression](./spooky-sevenths-progression) - You can connect 6/7 of the seventh chord types and move between them moving by a single half step at a time. 
