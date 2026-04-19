@@ -33,6 +33,8 @@ These pages describe specific patterns and point out examples across various dis
    - [Halfway up the Octave](./patterns/half-octave.md)
    - [Diatonic Modes](./patterns/diatonic-modes.md)
    - [Movable Do Solfege](./patterns/movable-do-solfege.md)
+   - [Stacking Thirds Into Chords](./patterns/stacking-thirds.md)
+   - [Spooky Sevenths Progression](./patterns/spooky-sevenths-progression.md)
 - Periodic Motion
    - [Uniform Circular Motion](./patterns/circular-motion.md)
    - [Lissajous Curves](./patterns/lissajous.md)

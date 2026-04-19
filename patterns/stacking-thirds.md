@@ -1,4 +1,4 @@
-# Stacking Thirds
+# Stacking Thirds Into Chords
 
 ![Diagram of a chord structure as stacking thirds between the root, third, fifth and seventh](figures/stacked-thirds.png)
 
