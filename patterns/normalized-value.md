@@ -36,7 +36,7 @@ to_signed(unsigned) = 2 * unsigned - 1
 
 - Deconstruct: `(sign, magnitude) = (sgn(x), abs(x))`
 - Construct: `x = sign * magnitude`
-- This is example of the [construct/deconstruct](./construct-deconstruct.md) pattern[^2]
+- This is example of the [construct/deconstruct](./construct-deconstruct.html) pattern[^2]
 
 [^2]: ...with some minor hair splitting over the domain and range due to zero having more than one represntation E.g. $(+1, 0) = (0, r) = (-1, 0)$.
 

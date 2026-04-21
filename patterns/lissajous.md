@@ -4,7 +4,7 @@
 
 🚧 Outline for now
 
-- One representation for [Uniform Circular Motion](./circular-motion.md) is $C_n(t) = \cos_n + i\sin_n$ with a single frequency $n$
+- One representation for [Uniform Circular Motion](./circular-motion.html) is $C_n(t) = \cos_n + i\sin_n$ with a single frequency $n$
 - What if we allow each sinusoid to have a different frequency? $a, b$
 - Let's define $$L_{a, b} = \cos_a + i \sin_b$$
 - TODO: explore properties of Lissajous curves
@@ -25,6 +25,6 @@
 ![Desmos graph of sum of two Lissajous curves](figures/lissajous-sum.png)
 
 - [Desmos graph](https://www.desmos.com/calculator/zxabmczkq3) -- Adding two different Lissajous curves
-    - Interestingly, some settings produce [rose curves](./rose-curves.md)!
-- ❓What happens when you swap out the sine waves with other [basic waveforms](./basic-waves.md)
-    - Will one choice of wave produce [mirror curves](./mirror-curves.md) which look similar?
+    - Interestingly, some settings produce [rose curves](./rose-curves.html)!
+- ❓What happens when you swap out the sine waves with other [basic waveforms](./basic-waves.html)
+    - Will one choice of wave produce [mirror curves](./mirror-curves.html) which look similar?

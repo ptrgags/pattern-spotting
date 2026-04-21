@@ -20,31 +20,31 @@ up-and-down arpeggio pattern in music:
 
 These pages give examples of where patterns can be found. Some will be patterns used in my creative projects, others will be patterns I find in the world.
 
-- [Piano Keyboard](./case-studies/piano-keyboard.md)
-- [Bass Guitar Fretboard](./case-studies/bass-fretboard.md)
+- [Piano Keyboard](./case-studies/piano-keyboard.html)
+- [Bass Guitar Fretboard](./case-studies/bass-fretboard.html)
 
 ## Patterns
 
 These pages describe specific patterns and point out examples across various disciplines.
 
-- [Symmetry](./patterns/symmetry.md)
+- [Symmetry](./patterns/symmetry.html)
 - Musical Pitch
-   - [Logarithmic Frequency Scale](./patterns/frequency-log-scale.md) - octaves and semitones
-   - [Halfway up the Octave](./patterns/half-octave.md)
-   - [Diatonic Modes](./patterns/diatonic-modes.md)
-   - [Movable Do Solfege](./patterns/movable-do-solfege.md)
-   - [Stacking Thirds Into Chords](./patterns/stacking-thirds.md)
-   - [Spooky Sevenths Progression](./patterns/spooky-sevenths-progression.md)
+   - [Logarithmic Frequency Scale](./patterns/frequency-log-scale.html) - octaves and semitones
+   - [Halfway up the Octave](./patterns/half-octave.html)
+   - [Diatonic Modes](./patterns/diatonic-modes.html)
+   - [Movable Do Solfege](./patterns/movable-do-solfege.html)
+   - [Stacking Thirds Into Chords](./patterns/stacking-thirds.html)
+   - [Spooky Sevenths Progression](./patterns/spooky-sevenths-progression.html)
 - Periodic Motion
-   - [Uniform Circular Motion](./patterns/circular-motion.md)
-   - [Lissajous Curves](./patterns/lissajous.md)
-   - [Rose Curves](./patterns/rose-curves.md)
-   - [Trochoids](./patterns/trochoids.md)
+   - [Uniform Circular Motion](./patterns/circular-motion.html)
+   - [Lissajous Curves](./patterns/lissajous.html)
+   - [Rose Curves](./patterns/rose-curves.html)
+   - [Trochoids](./patterns/trochoids.html)
 - Signals
-   - [Basic Waves](./patterns/basic-waves.md) - (sine, sawtooth, etc.)
-   - [Normalized Value](./patterns/normalized-value.md)
+   - [Basic Waves](./patterns/basic-waves.html) - (sine, sawtooth, etc.)
+   - [Normalized Value](./patterns/normalized-value.html)
 - Misc
-   - [Construct/Deconstruct](./patterns/structure-destructure.md) - disassemble something into its parts, then put it back together again
+   - [Construct/Deconstruct](./patterns/structure-destructure.html) - disassemble something into its parts, then put it back together again
    
 
 ## New Creations
@@ -56,18 +56,18 @@ reorganized/rewritten over time.
 
 Patterns:
 
-- [Stripes](./stripes.md) - `| | | | | | | `
+- [Stripes](./stripes.html) - `| | | | | | | `
 
-- [Patterns in Space and Time](./space-time.md) - Comparing images, audio, animation by which space/time dimensions are used
-- [Patterns in Trigonometry](./trig-patterns.md) - Patterns that helped me learn my sine/cosine values years ago
+- [Patterns in Space and Time](./space-time.html) - Comparing images, audio, animation by which space/time dimensions are used
+- [Patterns in Trigonometry](./trig-patterns.html) - Patterns that helped me learn my sine/cosine values years ago
 
 Transformations:
 
-- [Reflection](./reflections.md) - Flip things backwards
+- [Reflection](./reflections.html) - Flip things backwards
 
 Other Pages
 
-- [Ideas](./ideas.md) - This file is a place to jot down rough ideas to be fleshed out later.
+- [Ideas](./ideas.html) - This file is a place to jot down rough ideas to be fleshed out later.
 
 ## Goals
 

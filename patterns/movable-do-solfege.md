@@ -27,7 +27,7 @@ These syllables are based on scale degrees, not specific pitches. For example, `
 
 ## Chromatic Scale in Solfege
 
-As an example, let's go up and down the [chromatic scale](./uniform-scale.md). Going upwards, we use sharps, going downwards,
+As an example, let's go up and down the [chromatic scale](./uniform-scale.html). Going upwards, we use sharps, going downwards,
 we use flats. Here's the corresponding solfege:
 
 ```

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Basic Waves
 
 🚧 Outline for now
@@ -13,7 +17,7 @@
 ![Desmos graph of a ramp wave](figures/basic-waves-ramp.png)
 
 - $\text{ramp}(t) = \text{fract}(t) = \text{mod}(t, 1) $
-- This is an [unsigned signal](./normalized-value.md), i.e. the range of values is $[0, 1]$
+- This is an [unsigned signal](./normalized-value.html), i.e. the range of values is $[0, 1]$
 - This serves as a building block for some of the waves below
 
 ## Sawtooth Wave

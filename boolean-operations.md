@@ -281,7 +281,7 @@ All 16 boolean operations:
 ## Programming: Bitwise Operations
 
 >[!INFO]
->See also [Patterns in Bitwise Boolean Operators](./bitwise-boolean.md) for further explorations. There are
+>See also [Patterns in Bitwise Boolean Operators](./bitwise-boolean.html) for further explorations. There are
 > some pretty patterns when interpreted as colors!
 >
 > <img src="./figures/boolean-xor.png" width="250">

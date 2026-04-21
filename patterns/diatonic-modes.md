@@ -1,6 +1,9 @@
+---
+---
+
 # Diatonic Modes
 
-The 7 modes of the [Diatonic Scale](./diatonic-scale.md) are cyclic
+The 7 modes of the [Diatonic Scale](./diatonic-scale.html) are cyclic
 permutations of the C major scale (aka Ionian mode):
 
 ```
@@ -20,7 +23,7 @@ a tonic note (the first note of the scale) and one of the 7 mode names
 label_mode :: PitchClass[7] -> (PitchClass, {Io, Do, Ph, Ly, Mi, Ae, Lo})
 ```
 
-Then `label_mode` has the following permutation [symmetry](./symmetry.md):
+Then `label_mode` has the following permutation [symmetry](./symmetry.html):
 
 ```
 // Cycle the list of pitches one place to the left
@@ -178,7 +181,7 @@ Which scale degree gets flatted?
 - First we flat the 4th (from `#4 -> 4`)
 - Then we flat the 7th (from `7 -> b7`)
 - The whole pattern is `4 -> 7 -> 3 -> 6 -> 2 -> 5`
-- If we go back to letter names, we get `F B E A D G`. This is just a partial [Circle of Fourths](./uniform-scale.md)!
+- If we go back to letter names, we get `F B E A D G`. This is just a partial [Circle of Fourths](./uniform-scale.html)!
 
 To summarize, to go to the next mode in the table,
 take the most recently flatted note, move up a fourth and flat that note.
@@ -281,7 +284,7 @@ modes. So `12 * 7 = 84` possible modes.
 
 ## Modes in Solfege
 
-Another way to present the results of [§ Modes Ordered by Flats](#modes-ordered-by-flats) is using [moveable do solfege](./movable-do-solfege.md). Each scale degree is turned into
+Another way to present the results of [§ Modes Ordered by Flats](#modes-ordered-by-flats) is using [moveable do solfege](./movable-do-solfege.html). Each scale degree is turned into
 a syllable that can be sung.
 
 ```
