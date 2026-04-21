@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Rose Curves
 
 ![Desmos graph of a rose curve with 12 petals](figures/rose-curve-example.png)

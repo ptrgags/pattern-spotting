@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Moveable Do Solfege
 
 Table based on ["Moveable Do Solfege Explained"](https://music-theory-practice.com/guides/moveable-do-solfege-explained) from `music-theory-practice.com`

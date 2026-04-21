@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Lissajous Patterns
 
 ![Desmos graph of a Lissajous curve](figures/lissajous-example.png)

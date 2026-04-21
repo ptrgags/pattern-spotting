@@ -1,4 +1,5 @@
 ---
+layout: default
 ---
 
 # Construct and Deconstruct

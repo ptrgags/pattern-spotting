@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Pattern: Halfway up the Octave
 
 What musical interval is halfway up the octave? It depends on how you measure it! We can look at the halfway point in Hz

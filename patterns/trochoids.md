@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Trochoids
 
 🚧 Outline for now

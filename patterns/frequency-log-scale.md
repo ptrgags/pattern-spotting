@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Pattern: Logarithmic Frequency Scale
 
 ![Diagram that relates pitch ratio to octaves/semitones/cents](figures/log-freq-relationships.png)
