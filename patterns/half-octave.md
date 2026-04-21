@@ -1,7 +1,11 @@
+---
+layout: default
+---
+
 # Pattern: Halfway up the Octave
 
 What musical interval is halfway up the octave? It depends on how you measure it! We can look at the halfway point in Hz
-(which is linear) or in semitones (which are a [logarithmic scale](./frequency-log-scale.md)). Each gives a different answer.
+(which is linear) or in semitones (which are a [logarithmic scale](./frequency-log-scale.html)). Each gives a different answer.
 
 ## Halfway as a Ratio
 
@@ -19,7 +23,7 @@ However, many instruments use [12-tone equal temperament (wiki)](https://en.wiki
 <summary>"flat by 2 cents"</summary>
 
 A perfect fifth in 12-TET is 7 semitones above the root.
-Working backwards using the relationships from [frequency log scale](./frequency-log-scale.md), we have:
+Working backwards using the relationships from [frequency log scale](./frequency-log-scale.html), we have:
 
 $$2^{7/12} \approx 1.498$$
 

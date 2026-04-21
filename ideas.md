@@ -207,7 +207,7 @@ to write an outline.
     - my past "Super Seashells" project
     - woah, wait, a seashell grows over time, yet the
     history is built into a shell. So it's an example of a world sheet!!?
-        - discussed further in [Space-time](./space-time.md)
+        - discussed further in [Space-time](./space-time.html)
         - that means knitting patterns are also similar since the history is built into the structure
         - and similarly - log files!
         - Curiosity - is there a way to distinguish monoids that store history information such that you can decompose the result back into its original parts?

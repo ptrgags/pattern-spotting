@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Pattern: Logarithmic Frequency Scale
 
 ![Diagram that relates pitch ratio to octaves/semitones/cents](figures/log-freq-relationships.png)
@@ -60,5 +64,5 @@ i.e. for a given pitch $f$, the MIDI note number will be 21 semitones higher tha
 
 ## Related Patterns
 
-- [Halfway up the Octave](./half-octave.md) - What interval is halfway up the octave? The answer depends on how you measure!
-- [Logarithmic Scales](./log-scales.md) - Musical pitch forms a logarithmic scale with base 2. There are plenty of other log scales in other contexts, often with base 10.
+- [Halfway up the Octave](./half-octave.html) - What interval is halfway up the octave? The answer depends on how you measure!
+- [Logarithmic Scales](./log-scales.html) - Musical pitch forms a logarithmic scale with base 2. There are plenty of other log scales in other contexts, often with base 10.

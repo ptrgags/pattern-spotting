@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Pattern: Symmetry
 
 There are multiple definitions for symmetry

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Stacking Thirds Into Chords
 
 ![Diagram of a chord structure as stacking thirds between the root, third, fifth and seventh](figures/stacked-thirds.png)
@@ -113,7 +117,7 @@ Semitones   Seventh Chord
 0 4 8 12          + (triad, not seventh)
 ```
 
-With some slight tweaks, this table can be turned into a [spooky chord progression](./spooky-sevenths-progression.md)
+With some slight tweaks, this table can be turned into a [spooky chord progression](./spooky-sevenths-progression.html)
 
 ## Seventh Chord Relationships
 
@@ -158,4 +162,4 @@ If you swap `m <--> M`, the seventh chords pair up in the following way:
     - I'm guessing that impossible combinations due to doubled scale degrees will become more common
 - SOUND: sound clips of these chords (both as harmony and arpeggiated) would be helpful
 - Related patterns
-    - Connections between this and [diatonic modes](./diatonic-modes.md) and chords (both triads and sevenths)
+    - Connections between this and [diatonic modes](./diatonic-modes.html) and chords (both triads and sevenths)

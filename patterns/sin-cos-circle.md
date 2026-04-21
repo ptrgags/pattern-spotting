@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Sine and Cosine as Circular Motion
 
 🚧 Outline for now

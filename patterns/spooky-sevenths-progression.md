@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Spooky Sevenths Progression
 
 While exploring [seventh chords](./stacking-thirds.md#seventh-chords), I realized that you can order 6 out of 7 seventh chords into a progression that moves a single semitone at a time.

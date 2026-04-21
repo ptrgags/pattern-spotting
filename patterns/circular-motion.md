@@ -1,8 +1,12 @@
+---
+layout: default
+---
+
 # Uniform Circular Motion
 
 ![Diagram of circular motion](figures/circular-motion-thumbnail.png)
 
-Motion around a circle is a building block for several other patterns, and plays a role in the [Fourier Transform](./fourier-transform.md).
+Motion around a circle is a building block for several other patterns, and plays a role in the [Fourier Transform](./fourier-transform.html).
 
 Let $C_n(t)$ represent motion around a circle such that:
 
@@ -16,7 +20,7 @@ What is the nature of $C_n$? There's a couple ways to think about it:
 
 ![Diagram with the left hal showing a rotation transformation, and the right half showing a curve created by rotating a point](figures/circular-motion-two-views.png)
 
-- As a transformation: $C_n$ is a continuous [rotation](./rotation.md) with an angle that changes with time.
+- As a transformation: $C_n$ is a continuous [rotation](./rotation.html) with an angle that changes with time.
     - Since we complete $n$ full cycles, and there are $2\pi$ radians/cycle, that means we rotate to an angle of $\theta(t) = 2\pi n t$ radians at time $t$
     - This means $n$ is a (linear) **frequency** in cycles/sec
     - So $C_n(t) = R(2\pi n t)$ is a transformation
@@ -52,7 +56,7 @@ $C_n(t)$ is an abstract notion of circular motion. A concrete representation dep
 \end{bmatrix}$$
 - As a 2D parametric curve: $$C_n(t) = (\cos(2\pi n t), \sin(2\pi nt))$$
 
-- As a rotor in 2D Geometric Algebra (and in many other flavors of GA): $$C_n(t) = e^{-\theta/2 \cdot\mathbf{xy}} = e^{-2\pi n/2 \cdot \mathbf{xy}} = \cos(\pi t) - \sin(\pi t)\hat{B}$$ for unit bivector $\mathbf{xy}$. This transformation is applied as a [sandwich product](./sandwich-product.md) $C_n(t)vC_n(t)^\dagger$.
+- As a rotor in 2D Geometric Algebra (and in many other flavors of GA): $$C_n(t) = e^{-\theta/2 \cdot\mathbf{xy}} = e^{-2\pi n/2 \cdot \mathbf{xy}} = \cos(\pi t) - \sin(\pi t)\hat{B}$$ for unit bivector $\mathbf{xy}$. This transformation is applied as a [sandwich product](./sandwich-product.html) $C_n(t)vC_n(t)^\dagger$.
 
 ## Properties of Circular Motion
 
@@ -74,7 +78,7 @@ $$e^{i 2\pi a t}e^{i 2\pi b t} = e^{i 2\pi (a + b) t}$$
 This relies on the commutativity of complex numbers under multiplication.
 </details>
 
-- [Reflecting](./reflection.md) the circular motion in a mirror reverses its direction: $$\text{reflect} \circ C_n = C_{-n}$$
+- [Reflecting](./reflection.html) the circular motion in a mirror reverses its direction: $$\text{reflect} \circ C_n = C_{-n}$$
 
 <details>
 <summary>Proof of reflection rule</summary>
@@ -87,8 +91,8 @@ $$\overline{C_n(t)} = \overline{e^{i 2 \pi n t}} = e^{-i 2\pi n t} = C_{-n}(t) $
 
 ## Related Patterns
 
-- [Sine and Cosine as Circular Motion](./sin-cos-circle.md)
-- [Lissajous Patterns](./lissajous.md)
-- [Rose Curves](./rose-curves.md)
-- [Fourier Transform](./fourier-transform.md)
+- [Sine and Cosine as Circular Motion](./sin-cos-circle.html)
+- [Lissajous Patterns](./lissajous.html)
+- [Rose Curves](./rose-curves.html)
+- [Fourier Transform](./fourier-transform.html)
 - [Hypotrochoids and Epitrochoids](./trochoids)
