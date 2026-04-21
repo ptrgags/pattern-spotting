@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Case Study: Bass Fretboard
 
 ![Diagram of bass fretboard](figures/bass-fretboard-blank.png)
