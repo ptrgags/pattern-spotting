@@ -63,7 +63,6 @@ reorganized/rewritten over time.
 
 Patterns:
 
-- 
 - [Patterns in Space and Time](./space-time.html) - Comparing images, audio, animation by which space/time dimensions are used
 - [Patterns in Trigonometry](./trig-patterns.html) - Patterns that helped me learn my sine/cosine values years ago
 
@@ -74,6 +73,7 @@ Transformations:
 Other Pages
 
 - [Ideas](./ideas.html) - This file is a place to jot down rough ideas to be fleshed out later.
+- [Embed Test](./embed-test.html)
 
 ## Goals
 
