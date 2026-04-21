@@ -32,9 +32,12 @@ nav {
     align-items: center;
 }
 
-.container canvas {
-    max-width: 100vw;
-    object-fit: contain;
+.content {
+    max-width: 800px;
+}
+
+.content img {
+    max-width: 100%;
 }
 
 a:link {
