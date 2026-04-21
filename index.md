@@ -33,6 +33,8 @@ These pages give examples of where patterns can be found. Some will be patterns 
 These pages describe specific patterns and point out examples across various disciplines.
 
 - [Symmetry](./patterns/symmetry.html)
+- Visual Patterns
+   - [Stripes](./patterns/stripes.html) - `| | | | | | | `
 - Musical Pitch
    - [Logarithmic Frequency Scale](./patterns/frequency-log-scale.html) - octaves and semitones
    - [Halfway up the Octave](./patterns/half-octave.html)
@@ -61,8 +63,7 @@ reorganized/rewritten over time.
 
 Patterns:
 
-- [Stripes](./stripes.html) - `| | | | | | | `
-
+- 
 - [Patterns in Space and Time](./space-time.html) - Comparing images, audio, animation by which space/time dimensions are used
 - [Patterns in Trigonometry](./trig-patterns.html) - Patterns that helped me learn my sine/cosine values years ago
 
