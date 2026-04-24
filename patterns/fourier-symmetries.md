@@ -3,6 +3,13 @@ layout: default
 ---
 # Fourier Transform Symmetries
 
+## Prerequisites
+
+This page uses some definitions and notation from the following pages:
+
+- [Uniform Circular Motion](./circular-motion.md)
+- [Fourier Transform](./fourier-transform.md)
+
 ## Linearity
 
 IMG: Make some example graphs to demonstrate linearity
@@ -77,7 +84,7 @@ $$
               dt' &= a dt \\
 \mathscr{F}f(at) &= \frac{1}{a}\int_{-\infty}^{\infty}f(t') C_{-k}(t'/a)dt' \\
      &= \frac{1}{a}\int_{-\infty}^{\infty}f(t') C_{-k/a}(t')dt' \\
-     &= \frac{1}{a}\hat{f}\left(\frac{k}{a}\right)
+     &= \frac{1}{a}\hat{f}\left(\frac{k}{a}\right)🪦
 
 \end{align*}
 $$
@@ -106,3 +113,65 @@ Notice:
 - The peaks in the second plot are four times more spread out
     - As a result, the first peak (the perceived pitch of the note) is now 4 times higher in Hz, or 2 [octaves](./frequency-log-scale.md) higher
 - It's hard to get a precise amplitude reading from these plots, but if you compare the first peak of each graph, the second graph has a shorter peak
+
+## Phase Shift
+
+> Delaying a signal in time corresponds to rotating the Fourier coefficients proportional to frequency
+
+$$\mathscr{F}f(t - d) = C_{-k}(d)\hat{f}(k)$$
+
+<details>
+<summary>Gory math details</summary>
+
+$$
+\begin{align*}
+\mathscr{F}f(t - d) &= \int f(t - d) C_{-k}(t) dt \\
+\text{let}\; t' &= t -d \\
+    t &= t' + d \\
+    dt' &= dt \\
+\mathscr{F}f(t - d) &= \int f(t') C_{-k}(t' + d) dt' \\
+    &= \int f(t') C_{-k}(t')C_{-k}(d) dt' \\
+    &= C_{-k}(d)\int f(t') C_{-k}(t') dt' \\
+    &= C_{-k}(d)\mathscr{F}f \\
+    &= C_{-k}(d)\hat{f} 🪦
+\end{align*}
+$$
+
+</details>
+
+Interpretation:
+
+- $f(t - d)$ means delay the original signal by a delay of $d$ seconds
+- From the [Uniform Circular Motion](./circular-motion.md) page, $C_{-k}$ can be interpreted as a _rotation_, so $C_{-k}(d)$ is a rotation by angle $\theta = {-2 \pi k d}$
+    - This rotation is clockwise in the complex plane since the angle is negative
+    - The angle is proportional to the phase shift $d$.
+    - The angle is also proportional to the frequency $k$, since faster spinning components move further in the same amount of time
+
+## Fourier Transform Has Order 4
+
+🚧 Outline for now
+
+IMG: Diagram of the four functions with arrows in between
+
+At least for real-valued signals:
+
+$$
+\begin{align*}
+\mathscr{F}f(x) &= \hat{f}(x) \\
+\mathscr{F}\hat{f}(x) &= f(-x) \\
+\mathscr{F}f(-x) &= \hat{f}(-x) \\
+\mathscr{F}\hat{f}(-x) &= f(x) \\
+\end{align*}
+$$
+
+Which is back where we started. We can write this as:
+
+$$\mathscr{F}\mathscr{F}\mathscr{F}\mathscr{F} = \mathscr{F}^4 = I$$
+
+In group theory, this would be described as "The Fourier Transform has order 4", or in other words, repeating the operation four times brings you back to where you started.
+
+TODO:
+
+- Add the math details - the sign of the complex exponential changes as you iterate, and that is where this pattern comes from. Also the time reversal symmetry is relevant.
+- ❓Does this hold for all functions of complex numbers? or only for real values?
+- For even functions, the Fourier Transform has order 2 instead!
