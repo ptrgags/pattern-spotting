@@ -18,6 +18,17 @@ IMG: Make some example graphs to demonstrate linearity
 > - Scaling the amplitude of a signal in time is the same as scaling the amplitude of the corresponding frequency spectrum
 > - A superposition of signals in time is the same as a superposition of their corresponding frequency spectra
 
+$$
+\begin{align*}
+\mathscr{F}(af) &= a\mathscr{F}f = a\hat{f}\\
+\mathscr{F}(f + g) &= \mathscr{F}f + \mathscr{F}g = \hat{f} + \hat{g}
+\end{align*}
+$$
+
+<details>
+
+<summary>Proof</summary>
+
 The Fourier Transform amounts to a fancy integral. And since it's an integral, it inherits linearity:
 
 $$
@@ -27,6 +38,8 @@ $$
     &= a\mathscr{F}f + b\mathscr{F}g
 \end{align*}
 $$
+
+</details>
 
 ## Reversing Time
 
