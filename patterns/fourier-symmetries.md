@@ -7,8 +7,8 @@ layout: default
 
 This page uses some definitions and notation from the following pages:
 
-- [Uniform Circular Motion](./circular-motion.md)
-- [Fourier Transform](./fourier-transform.md)
+- [Uniform Circular Motion](./circular-motion.html)
+- [Fourier Transform](./fourier-transform.html)
 
 ## Linearity
 
@@ -111,7 +111,7 @@ Notice:
 
 - The graph is shown with a _linear_ scale on the bottom instead of the more typical logarithmic scale.
 - The peaks in the second plot are four times more spread out
-    - As a result, the first peak (the perceived pitch of the note) is now 4 times higher in Hz, or 2 [octaves](./frequency-log-scale.md) higher
+    - As a result, the first peak (the perceived pitch of the note) is now 4 times higher in Hz, or 2 [octaves](./frequency-log-scale.html) higher
 - It's hard to get a precise amplitude reading from these plots, but if you compare the first peak of each graph, the second graph has a shorter peak
 
 ## Phase Shift
@@ -142,7 +142,7 @@ $$
 Interpretation:
 
 - $f(t - d)$ means delay the original signal by a delay of $d$ seconds
-- From the [Uniform Circular Motion](./circular-motion.md) page, $C_{-k}$ can be interpreted as a _rotation_, so $C_{-k}(d)$ is a rotation by angle $\theta = {-2 \pi k d}$
+- From the [Uniform Circular Motion](./circular-motion.html) page, $C_{-k}$ can be interpreted as a _rotation_, so $C_{-k}(d)$ is a rotation by angle $\theta = {-2 \pi k d}$
     - This rotation is clockwise in the complex plane since the angle is negative
     - The angle is proportional to the phase shift $d$.
     - The angle is also proportional to the frequency $k$, since faster spinning components move further in the same amount of time

@@ -50,6 +50,7 @@ These pages describe specific patterns and point out examples across various dis
 - Signals
    - [Basic Waves](patterns/basic-waves.html) - (sine, sawtooth, etc.)
    - [Normalized Value](./patterns/normalized-value.html)
+   - [Fourier Transform](./patterns/fourier-transform.html)
    - [Fourier Transform Symmetries](./patterns/fourier-symmetries.html)
 - Misc
    - [Construct/Deconstruct](./patterns/structure-destructure.html) - disassemble something into its parts, then put it back together again
