@@ -53,7 +53,7 @@ These pages describe specific patterns and point out examples across various dis
    - [Fourier Transform](./patterns/fourier-transform.html)
    - [Fourier Transform Symmetries](./patterns/fourier-symmetries.html)
 - Misc
-   - [Construct/Deconstruct](./patterns/structure-destructure.html) - disassemble something into its parts, then put it back together again
+   - [Construct/Deconstruct](./patterns/construct-deconstruct.html) - disassemble something into its parts, then put it back together again
    
 
 ## New Creations

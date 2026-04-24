@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Normalized Values
 
 🚧 Outline for now
