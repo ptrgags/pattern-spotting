@@ -122,10 +122,12 @@ Above: Two audio spectra for the same waveform played first at a C3, then C5. Th
 
 Notice:
 
-- The graph is shown with a _linear_ scale on the bottom instead of the more typical logarithmic scale.
+- The graph is shown with a _linear_ scale on the bottom instead of the more typical logarithmic scale. This is important so you can see the frequency peaks spreading out. On a logarithmic scale, it will look like a translation instead[^1]
 - The peaks in the second plot are four times more spread out
     - As a result, the first peak (the perceived pitch of the note) is now 4 times higher in Hz, or 2 [octaves](./frequency-log-scale.html) higher
 - It's hard to get a precise amplitude reading from these plots, but if you compare the first peak of each graph, the second graph has a shorter peak
+
+[^1]: This is because of the property $\log(ax) = \log(a) + \log(x)$
 
 ## Phase Shift
 
@@ -190,3 +192,5 @@ TODO:
 - Add the math details - the sign of the complex exponential changes as you iterate, and that is where this pattern comes from. Also the time reversal symmetry is relevant.
 - ❓Does this hold for all functions of complex numbers? or only for real values?
 - For even functions, the Fourier Transform has order 2 instead
+
+## Footnotes
