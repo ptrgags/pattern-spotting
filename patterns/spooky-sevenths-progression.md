@@ -4,7 +4,7 @@ layout: default
 
 ## Spooky Sevenths Progression
 
-While exploring [seventh chords](./stacking-thirds.md#seventh-chords), I realized that you can order 6 out of 7 seventh chords into a progression that moves a single semitone at a time.
+While exploring [seventh chords](./stacking-thirds.html#seventh-chords), I realized that you can order 6 out of 7 seventh chords into a progression that moves a single semitone at a time.
 
 ![Diagram of the spooky sevenths progression](figures/spooky-sevenths-progression.png)
 

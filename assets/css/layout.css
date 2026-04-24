@@ -1,6 +1,7 @@
 :root {
-    --background-dark: #0d4f1f;
-    --background-light: #3d7948;
+    --background-darker: oklch(0.3 0.1 286.82);
+    --background-dark: oklch(0.4 0.1 286.82);
+    --background-light: oklch(0.5 0.1 286.82);
 }
 
 body {
@@ -9,6 +10,11 @@ body {
     font-family: sans-serif;
     background-color: var(--background-dark);
     color: #eeeec5;
+}
+
+blockquote {
+    background-color: var(--background-darker);
+    border-left: 4px solid #e2e259
 }
 
 p {
@@ -21,7 +27,7 @@ li {
 }
 
 nav {
-    background-color: var(--background-light);
+    background-color: var(--background-darker);
     padding: 10px;
 }
 
@@ -83,5 +89,9 @@ td {
 @media screen and (max-width: 700px) {
     .description {
         width: 90%;
+    }
+
+    .content {
+        max-width: 100vw;
     }
 }

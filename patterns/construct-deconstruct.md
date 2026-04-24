@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 # Construct and Deconstruct
 
 🚧 Outline for now
