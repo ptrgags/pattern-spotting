@@ -149,6 +149,8 @@ Interpretation:
 
 ## Fourier Transform Has Order 4
 
+> Repeating the (forward) Fourier transform 4 times results in the original signal!
+
 🚧 Outline for now
 
 IMG: Diagram of the four functions with arrows in between
@@ -174,4 +176,4 @@ TODO:
 
 - Add the math details - the sign of the complex exponential changes as you iterate, and that is where this pattern comes from. Also the time reversal symmetry is relevant.
 - ❓Does this hold for all functions of complex numbers? or only for real values?
-- For even functions, the Fourier Transform has order 2 instead!
+- For even functions, the Fourier Transform has order 2 instead
