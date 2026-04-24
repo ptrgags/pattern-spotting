@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ## Fourier Transform
 
 ## Prerequisites
@@ -6,7 +9,7 @@ This page uses definitions and notation from the following pages:
 
 - [Uniform Circular Motion](./circular-motion.html)
 
-##
+## Definition
 
 > The Fourier Transform takes a signal in time and decomposes it into
 > periodic motion at various frequencies (i.e. a **frequency spectrum**)
