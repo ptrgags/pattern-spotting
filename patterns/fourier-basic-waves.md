@@ -61,7 +61,58 @@ a single peak $1\delta_n$
 
 ## Square
 
-🚧 Under Construction, not quite right...
+🚧 Under Construction, this section is a bit of a mess right now...
+
+Let's look at a square wave with period 1 unit.
+
+- It's +1 for the first half of each cycle
+- It's -1 for the second half of each cycle
+
+So A single cycle could be described by combining two [boxcar functions](./fourier-transform-pairs.html#boxcar-and-transformed-sinc):
+
+$$
+\text{square}(t) = \text{box}(t; 0, 1/2) - \text{box}(t; 1/2, 1)
+$$
+
+Since the period is 1, the Fourier Series coefficients are exactly the Fourier Transform of the boxcars sampled at integer frequencies:
+
+$$
+\begin{align*}
+ a_n &= \mathscr{F}\text{square} \\
+     &= \mathscr{F}(\text{box}(t; 0, 1/2) - \text{box}(t; 1/2, 1))\\
+     &= \mathscr{F}\text{box}(t; 0, 1/2) - \mathscr{F}\text{box}(t; 1/2, 1) \\
+     &= (1/2)C_{-n/4}\text{sinc}(n/2) - (1/2)C_{-3n/4}\text{sinc}(n/2) \\
+     &= (1/2)\text{sinc}(n/2)(C_{-n}(1/4)-C_{-n}(3/4)) \\
+\end{align*}
+$$
+
+Alternatively
+
+⚠️ I made a mistake somewhere below, I'm off by a factor of 2...
+
+$$
+\begin{align*}
+  a_n &= \mathscr{F}\text{square} \\
+  &= \mathscr{F}(\text{box}(t; 0, 1/2) - \text{box}(t; 1/2, 1))\\
+  &= \mathscr{F}\text{box}(t; 0, 1/2) - \mathscr{F}\text{box}(t; 1/2, 1) \\
+  &= \frac{1}{-2\pi n i}(C_{-n}(1/2) - C_{-n}(0))- \frac{1}{-2\pi n i}(C_{-n}(1) - C_{-n}(1/2)) \\
+  &= \frac{1}{-2 \pi n i}(2 C_{-n}(1/2) - 1 - 1) \\
+  &= \frac{1}{\pi n i}(C_{-n}(1/2) - 1) \\
+  &= \frac{1}{\pi n i}((-1)^n - 1)
+\end{align*}
+$$
+
+When $n$ is even, the part in parentheses is $(1 - 1) = 0$, so _all the even terms vanish!_
+
+Meanwhile, for odd $n$, we have $(-1 - 1) = -2$, so the result is:
+
+$$
+c_n =
+\frac{-2}{\pi n i} = \frac{2i}{\pi n}, n \; \text{odd}
+
+$$
+
+
 
 A square wave is +1 for the first half-cycle, and -1 for the second half-cycle.
 So we can split the Fourier Series 
