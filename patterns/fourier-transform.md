@@ -3,7 +3,7 @@ layout: default
 ---
 ## Fourier Transform
 
-## Prerequisites
+## Building Blocks
 
 This page uses definitions and notation from the following pages:
 
