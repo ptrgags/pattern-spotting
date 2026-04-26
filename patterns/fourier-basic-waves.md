@@ -97,8 +97,8 @@ $$
   &= \mathscr{F}\text{box}(t; 0, 1/2) - \mathscr{F}\text{box}(t; 1/2, 1) \\
   &= \frac{1}{-2\pi n i}(C_{-n}(1/2) - C_{-n}(0))- \frac{1}{-2\pi n i}(C_{-n}(1) - C_{-n}(1/2)) \\
   &= \frac{1}{-2 \pi n i}(2 C_{-n}(1/2) - 1 - 1) \\
-  &= \frac{1}{\pi n i}(C_{-n}(1/2) - 1) \\
-  &= \frac{1}{\pi n i}((-1)^n - 1)
+  &= \frac{1}{-\pi n i}(C_{-n}(1/2) - 1) \\
+  &= \frac{1}{-\pi n i}((-1)^n - 1)
 \end{align*}
 $$
 
@@ -108,7 +108,7 @@ Meanwhile, for odd $n$, we have $(-1 - 1) = -2$, so the result is:
 
 $$
 c_n =
-\frac{-2}{\pi n i} = \frac{2i}{\pi n}, n \; \text{odd}
+\frac{-2}{-\pi n i} = \frac{2}{\pi ni}, n \; \text{odd}
 
 $$
 
