@@ -152,14 +152,87 @@ TODO: Explain this one, this one takes a bit of calculus plus a trig identity
 
 ## Boxcar and Transformed Sinc
 
-> Shifting and scaling the rectangle function creates a general box-shaped pulse
+> A boxcar function is a more general rectangular-shaped function.
 > 
-> This corresponds to scaling and rotating the sinc function
+> The Fourier Transform of a boxcar is a scaled sinc function
 
-TODO: Flesh out the details
+![screenshot of Desmos graph, showing a boxcar function (red interval on the right) and its Fourier Transform, a scaled version of the sinc function](figures/fourier-pairs-boxcar-sinc.png)
+[Interactive Desmos Graph](https://www.desmos.com/calculator/gtihvewonz)
 
-- boxcar is like rect, but instead of $[-1/2, 1/2]$, it's defined on an arbitary interval $[a, b]$
-- This corresponds to rescaling the box from a width of 1 to a width of $(b - a)$ units, and shifting it from $-1/2$ to $a$
-- The rest proceeds using [Fourier Transform symmetries](./fourier-symmetries.html)
-    - The widening of the pulse corresponds to squishing the sinc function towards the origin (which also makes it taller)
-    - The phase shift rotates the coefficients
+Let's define a more general "boxcar" function that's like `rect`, but placed at a different interval $[a, b]$ instead of $[-1/2, 1/2]$
+
+$$\text{box(t; a, b)} = \begin{cases}
+    1 & t \in [a, b] \\
+    0 & \text{otherwise}
+\end{cases}$$
+
+Its Fourier Transform can be described in a couple of equivalent ways:
+
+- Integrating [uniform circular motion](./circular-motion.md) over the time interval $[a, b]$.
+- Shifting and scaling the `sinc` function.
+
+$$
+\begin{align*}
+ \mathscr{F}\text{box(t; a,b)} &= \int_a^b C_{-k} dt = \frac{1}{-2i\pi k}(C_{-k}(b) - C_{-k}(a))\\
+ &= (b-a)C_{-k}\left(\frac{a + b}{2}\right)\text{sinc}((b-a)k)
+\end{align*}
+$$
+
+<details>
+<summary>Derivation of sinc formula by transforming the results for rect</summary>
+
+First, notice that the boxcar function is just a scaled and shifted copy of `rect`
+
+- It's scaled horizontally from a width of 1 to a width of $(b - a)$
+- The center is shifted from 0 to $(a + b)/2$ (midpoint of the interval)
+- The above corresponds to transforming the rectangle function as follows:
+
+$$\text{box}(a, b) = \text{rect}\; \circ S^{-1}(b - a) \circ T^{-1}((a + b)/2) \\= \text{rect}\left(\frac{t - \frac{a + b}{2}}{b-a}\right)$$
+
+Now we make use of [Fourier Transform symmetries](./fourier-symmetries.html)
+to compute the Fourier Transform by modifying the pair for `rect`:
+
+$$
+\begin{align*}
+ \mathscr{F}\text{rect}(t) &= \text{sinc}(k)\\
+ \mathscr{F}\text{rect}\left(\frac{t}{b-a}\right) &= (b-a)\text{sinc}((b-a)k)\\
+ \mathscr{F}\text{rect}\left(\frac{t - \frac{a + b}{2}}{b-a}\right) &= (b-a)C_{-k}\left(\frac{a + b}{2}\right)\text{sinc}((b-a)k)\\
+ \mathscr{F}\text{box(t; a,b)} &= (b-a)C_{-k}\left(\frac{a + b}{2}\right)\text{sinc}((b-a)k)
+\end{align*} 
+$$
+</details>
+
+<details>
+<summary>Proof that the sinc formula and direct integration are equivalent</summary>
+
+Let's take that formula, expand it and simplify:
+
+$$
+\begin{align*}
+\mathscr{F}\text{box(t; a,b)} &= (b-a)C_{-k}\left(\frac{a + b}{2}\right)\text{sinc}((b-a)k) \\
+ &= \frac{(b-a)e^{-i \pi k(a + b)}\sin(\pi(b-a)k)}{\pi (b-a)k} \\
+ &= \frac{e^{-i\pi k(a + b)}(e^{i \pi (b-a) k} - e^{-i\pi (b-a) k})}{2i\pi k} \\
+ &= \frac{(e^{i \pi (b-a - a - b) k} - e^{i\pi (-b + a - a - b) k})}{2i\pi k} \\
+ &= \frac{(e^{i \pi (-2a) k} - e^{i\pi (-2b) k})}{2i\pi k} \\
+ &= \frac{(e^{-i 2 \pi b k} - e^{-i 2\pi a k})}{-2i\pi k} \\
+ &= \frac{1}{-2i\pi k}(C_{-k}(b) - C_{-k}(a))\\
+\end{align*}
+$$
+
+Direct integration gives the same thing:
+
+$$
+\begin{align*}
+ \mathscr{F} \text{box}(t; a, b) &= \int_a^b C_{-k} dt \\
+ &= \frac{1}{-2i\pi k}\bigl[C_{-k}\bigr]_a^b\\
+ &= \frac{1}{-2i\pi k}(C_{-k}(b) - C_{-k}(a))\\
+\end{align*}
+$$
+</details>
+
+The sinc formula is messy to look at, but it describes the shape of the frequency
+spectrum more explicitly
+
+- The overall shape is still a sinc function!
+- The sinc function is squished horizontally and stretched vertically by the same factor $(b-a)$
+- The coefficients are rotated in the complex plane. This changes the phase, but not the magnitude.
