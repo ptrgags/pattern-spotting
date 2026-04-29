@@ -278,10 +278,31 @@ What about the top end of the table? From inspection, it looks like the pattern 
 
 ## The 84 Modes
 
-TODO: I want to make a demo of this in `p5-sketchbook`; that will take some time. For now, picture a big circle with 84 tick marks. 12 major tick marks for the 12 tonic notes. In between each are 6 minor tick marks for the various modes.
+The previous section describes a circular order of the different modes. What does that look like and sound like? I made a simulation of this in my other project, `p5-sketchbook`:
 
-There are 12 possible tonic notes, and 7 possible
-modes. So `12 * 7 = 84` possible modes.
+![Circle of 84 Modes](figures/diatonic-modes-circle84.png)
+
+[Live Demo in `p5-sketchbook`](https://ptrgags.github.io/p5-sketchbook/Modes84)
+
+First of all, how big is this circle? There are 12 possible tonic notes, and 7 possible modes. So that makes `12 * 7 = 84` possible modes.
+
+Starting from the right at C Lydian and moving clockwise,
+the animation plays the same motif, adding one flat for each
+tick mark on the circle. This descends through the modes
+as described in the previous section.
+
+For most of the circle, the sound gets darker and darker as
+we're adding more flats. However, the transitions from Locrian
+to Lydian have an interesting sound. It's simultanously darker and brighter:
+- The root note descends by a half step, which sounds darker
+- However, this transforms the scale structure quite drastically
+from Locrian (the darkest) to Lydian (the brightest)
+
+When you circle around to the start,
+you are now one octave below where you started. You could keep
+going at lower octaves if you have more notes on your instrument. In the demonstration linked above, I chose instead
+to jump up an octave as lower octaves can be hard to hear without headphones or speakers with good bass.
+
 
 ## Modes in Solfege
 
