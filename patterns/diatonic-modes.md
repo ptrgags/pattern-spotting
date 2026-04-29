@@ -284,7 +284,7 @@ The previous section describes a circular order of the different modes. What doe
 
 [Live Demo in `p5-sketchbook`](https://ptrgags.github.io/p5-sketchbook/Modes84)
 
-First of all, how big is this circle? There are 12 possible tonic notes, and 7 possible modes. So that makes `12 * 7 = 84` possible modes.
+First of all, how big is this circle? There are 12 possible tonic notes, and 7 possible modes. So that makes `12 * 7 = 84` unique modes.
 
 Starting from the right at C Lydian and moving clockwise,
 the animation plays the same motif, adding one flat for each
@@ -300,8 +300,7 @@ from Locrian (the darkest) to Lydian (the brightest)
 
 When you circle around to the start,
 you are now one octave below where you started. You could keep
-going at lower octaves if you have more notes on your instrument. In the demonstration linked above, I chose instead
-to jump up an octave as lower octaves can be hard to hear without headphones or speakers with good bass.
+going at lower octaves if you have more notes on your instrument. In the demo above, I instead chose to jump up to the original octave. This way the pitch stays within a fixed range.
 
 
 ## Modes in Solfege
