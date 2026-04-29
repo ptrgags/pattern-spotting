@@ -40,7 +40,7 @@ let cycle_mode(tonic, mode) = (
 label_mode * cycle_pitch = cycle_mode * label_mode
 ```
 
-<details>
+<details markdown="1">
 <summary>Concrete Example</summary>
 
 Starting with `pitches = F G A B C D E`
@@ -121,7 +121,7 @@ added (relative to Ionian). This is done in two parts:
     a flat (`b`)
 - The column number, starting with 1
 
-<details>
+<details markdown="1">
 <summary>Worked example: Mixolydian Mode</summary>
 
 Let's juxtapose the Ionian and Mixolydian modes
@@ -255,7 +255,7 @@ What about the top end of the table? From inspection, it looks like the pattern 
   ...
 ```
 
-<details>
+<details markdown="1">
 <summary>Two proof sketches</summary>
 
 - Apply the same process but in the other direction
