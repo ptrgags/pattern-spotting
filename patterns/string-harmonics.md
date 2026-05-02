@@ -33,6 +33,7 @@ layout: default
 ## String Fixed at One End
 
 - Again, string is length $L$
+- But now the far end is free to move up and down
 - Wave equation with constraints:
     - $f(0) = 0$
     - $f(L) = 1$ (max amplitude)
@@ -50,6 +51,8 @@ layout: default
     - wavelength $\lambda_n = \lambda_1 / n = (4/n)L$ where $n = 1, 3, 5, ...$
     - Frequency $f = nv/(4L)$
     - Wave $f(x) = \sin(2 \pi n x / (4L))$
+
+
 
 ## Other Notes
 
