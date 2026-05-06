@@ -3,30 +3,45 @@ layout: default
 ---
 # Guitar Harmonics
 
-🚧 Outline for now
+![Diagram of the first 8 harmonics on a guitar fretboard, this diagram is explained more further down the page.](figures/guitar-harmonics-fretboard-locations.png)
 
-## Fretting Note vs Harmonics
+## Fretting a Note vs. Harmonics
+
+> Pressing the string against a fret shortens the length and therefore increases the pitch.
+>
+> Lightly touching a point on the string will filter for a specific harmonic of the string's vibration.
+
+### Fretting a Note
+
+![Diagram of fretting a guitar string](figures/guitar-harmonics-fretting-note.png)
 
 When you fret a note, you pinch the string against one of the frets. This means the part above the fret will not vibrate. The part below the fret vibrates. This is equivalent to playing an open string with a _shorter length_.
 
-- Fretting a string: wave equation with constraints:
-    - $f([0, x]) = 0$
-    - $f(x) = 0$
-    - $f(L) = 0$
-    - Equivalent problem to constraints $f(0) = 0, f(L - x) = 0$, i.e. wave equation on a _shorter string_ fixed at both ends.
+This is the same as solving the [wave equation on a string](../patterns/wave-equation) with the following constraints:
+
+  - $f([0, x]) = 0$
+  - $f(x) = 0$
+  - $f(L) = 0$
+
+These constraints are equivalent to $f(0) = 0, f(L - x) = 0$, i.e. wave equation on a _shorter string_ fixed at both ends.
+
+### Activating a Harmonic
+
+![Diagram of activating a harmonic of a guitar string](figures/guitar-harmonics-activating-harmonic.png)
 
 When you play a harmonic of the string, you lightly touch the string without making contact with the fretboard. This means the point where you touch the string is fixed, but the string may vibrate both above and below. 
 
-- Activating harmonic: wave equation with constraints:
-    - $f(0) = 0$
-    - $f(x) = 0$
-    - $f(L) = 0$
-    - The solutions will be explored below, but in short, the set of harmonics is restricted, but it depends on the choice of $x$ as a fraction of the string's length.
+This setup creates a different set of constraints on the wave equation:
+
+- $f(0) = 0$
+- $f(x) = 0$
+- $f(L) = 0$
+
+The solutions will be explored below. In short, the set of harmonics is restricted, but it depends on the choice of $x$ as a fraction of the string's length.
 
 ## Nodes of Each Harmonic
 
 > Touching a point on the string a fraction of the way down its length will produce the harmonic of its denominator in lowest terms.
-
 
 Let's look at the different harmonics of the full string and see where they have a node, i.e. values of $x$ where $f(x) = 0$.
 
@@ -155,4 +170,11 @@ lines indicate harmonics that show up between frets.
   0.875           n=8  ---|
 ```
 
-TODO: I'd like to make a visualization in p5 that shows this pattern to scale
+The above table is not to scale, so I also made this diagram
+in [`p5-sketchbook`](https://ptrgags.dev/p5-sketchbook/GuitarHarmonics/):
+
+![Diagram of harmonics](figures/guitar-harmonics-fretboard-locations.png)
+
+## Extended Pattern
+
+![Diagram of ](figures/guitar-harmonics-to-infinity.png)
