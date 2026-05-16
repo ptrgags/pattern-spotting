@@ -8,7 +8,7 @@ layout: default
 
 ## Infinite String
 
-- Obeys the wave equation
+- Obeys the [wave equation](./wave-equation.html)
 - Solutions can be _any_ sinusoid of any frequency or phase
 
 ## String Fixed at Both Ends
