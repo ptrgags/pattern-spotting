@@ -89,6 +89,24 @@ $$\overline{C_n(t)} = \overline{e^{i 2 \pi n t}} = e^{-i 2\pi n t} = C_{-n}(t) $
 
 </details>
 
+## Adding up a Full Cycle
+
+> When adding up a whole circle, the directions cancel out exactly.
+
+IMG: Diagram of directions canceling out
+
+The simplest case is for a 1 Hz motion. After 1 second, we've traversed the whole circle. Adding up the displacements from the origin, the directions perfectly cancel out, leaving nothing:
+
+$$\int_0^1 C_1(t)dt = 0$$
+
+At a different frequency $n$ Hz, we complete a full circle after $1/n$ seconds. So we have:
+
+$$\int_0^{1/n} C_n(t)dt = 0$$
+
+However, we don't need to start at time 0. If we start at time $t_0$, we'll still traverse a full circle after $1/n$ seconds. So 
+
+$$\int_{t_0}^{t_0 + 1/n} C_n(t)dt = 0$$
+
 ## Related Patterns
 
 - [Sine and Cosine as Circular Motion](./sin-cos-circle.html)

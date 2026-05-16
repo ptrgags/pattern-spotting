@@ -52,8 +52,10 @@ These pages describe specific patterns and point out examples across various dis
 - Signals
    - [Basic Waves](patterns/basic-waves.html) - (sine, sawtooth, etc.)
    - [Normalized Value](./patterns/normalized-value.html)
+   - [Dirac Delta](./patterns/dirac-delta.html)
    - [Fourier Transform](./patterns/fourier-transform.html)
    - [Fourier Transform Symmetries](./patterns/fourier-symmetries.html)
+   - [Fourier Transform Pairs](./patterns/fourier-transform-pairs.html)
 - Misc
    - [Construct/Deconstruct](./patterns/construct-deconstruct.html) - disassemble something into its parts, then put it back together again
    

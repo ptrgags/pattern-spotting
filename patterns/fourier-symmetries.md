@@ -3,7 +3,7 @@ layout: default
 ---
 # Fourier Transform Symmetries
 
-## Prerequisites
+## Building Blocks
 
 This page uses some definitions and notation from the following pages:
 
