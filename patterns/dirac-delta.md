@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Dirac Delta
 
 🚧 Outline for now
