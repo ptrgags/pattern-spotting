@@ -48,18 +48,19 @@ Let's look at the different harmonics of the full string and see where they have
 | Harmonic number | Nodes at |
 |-----|---|
 | 1   | $0, L$ |
-| 2   | $0, L/2, L$ |
-| 3   | $0, L/3, 2L/3, L$ |
+| 2   | $0, (1/2)L, L$ |
+| 3   | $0, (1/3)L, (2/3)L, L$ |
+| 4   | $0, (1/4)L, \cancel{(2/4)L}, (3/4)L, L$
 | ... | ...|
-| n   | $0L/n=0, 1L/n, 2L/n, ..., nL/n=L$ |
+| n   | $(0/n)L=0, (1/n)L, (2/n)L, ..., (n/n)L=L$ |
 
 So each harmonic $n$ has nodes at multiples of $L/n$ along the string. These are the key points for activating the harmonic.
 
-However, there is some overlap. E.g. the point $L/2$ is a node for harmonics 2, 4, 6, and so on. If you touch the string at this point and strum, it will sound like the _lowest_ of these, i.e. the second harmonic.
+However, not every fraction produces a new harmonic. For example, $(3/6)L = (2/4)L = (1/2)L$, and only the second harmonic is heard.
 
 We can summarize this as follows:
 - Harmonics will be heard at points $x = (m/n)L$ where $m/n$ is a rational number in _lowest terms_
-- More specifically, the $n$-th harmonic will be heard, regardless of the choice of $m$
+- The $n$-th harmonic may be heard at multiple points on the string, for any $m$ such that $m/n$ is an irreducible fraction.
 
 ## Locating Harmonics on a Guitar String
 
