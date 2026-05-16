@@ -17,6 +17,12 @@ blockquote {
     border-left: 4px solid #e2e259
 }
 
+.highlight pre {
+    width: fit-content;
+    background-color: var(--background-darker);
+    margin: 0 auto;
+}
+
 p {
     line-height: 1.5em;
     margin: 10px;

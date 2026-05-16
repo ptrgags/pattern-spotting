@@ -27,6 +27,7 @@ These pages give examples of where patterns can be found. Some will be patterns 
 
 - [Piano Keyboard](./case-studies/piano-keyboard.html)
 - [Bass Guitar Fretboard](./case-studies/bass-fretboard.html)
+- [Guitar Harmonics](./case-studies/guitar-harmonics.html)
 
 ## Patterns
 
@@ -42,6 +43,7 @@ These pages describe specific patterns and point out examples across various dis
    - [Movable Do Solfege](./patterns/movable-do-solfege.html)
    - [Stacking Thirds Into Chords](./patterns/stacking-thirds.html)
    - [Spooky Sevenths Progression](./patterns/spooky-sevenths-progression.html)
+   - [String Harmonics](./patterns/string-harmonics.html)
 - Periodic Motion
    - [Uniform Circular Motion](./patterns/circular-motion.html)
    - [Lissajous Curves](./patterns/lissajous.html)
