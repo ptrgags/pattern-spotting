@@ -13,6 +13,10 @@ layout: default
 
 ## String Fixed at Both Ends
 
+![Diagram of harmonics of the fixed-fixed case](./figures/string-harmonics-fixed-fixed.png)
+
+[Link to animated graph](https://www.desmos.com/calculator/upw7ahhwb4)
+
 - String of length L
 - Wave equation with constraints:
     - $f(0) = 0$
@@ -30,7 +34,20 @@ layout: default
     - Frequency: $f = nv/(2L)$
     - Wave: $f(x) = \sin(2 \pi n x / \lambda_1)$
 
+## String Free at Both Ends
+
+![diagram of harmonics for the free-free case](./figures/string-harmonics-free-free.png)
+[Link to animated graph](https://www.desmos.com/calculator/upw7ahhwb4)
+
+- Wave equation with constraints:
+    - max amplitude at 0
+    - max amplitude at L
+- Same thing as the fixed-at-both-ends case, with a 1/4 cycle phase shift. In other words, replace $\sin$ with $\cos$.
+
 ## String Fixed at One End
+
+![Diagram of harmonics for ](./figures/string-harmonics-fixed-free.png)
+[Link to animated graph](https://www.desmos.com/calculator/upw7ahhwb4)
 
 - Again, string is length $L$
 - But now the far end is free to move up and down
@@ -51,8 +68,6 @@ layout: default
     - wavelength $\lambda_n = \lambda_1 / n = (4/n)L$ where $n = 1, 3, 5, ...$
     - Frequency $f = nv/(4L)$
     - Wave $f(x) = \sin(2 \pi n x / (4L))$
-
-
 
 ## Other Notes
 
