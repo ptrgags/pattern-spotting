@@ -37,6 +37,7 @@ layout: default
 ## String Free at Both Ends
 
 ![diagram of harmonics for the free-free case](./figures/string-harmonics-free-free.png)
+
 [Link to animated graph](https://www.desmos.com/calculator/upw7ahhwb4)
 
 - Wave equation with constraints:
@@ -47,6 +48,7 @@ layout: default
 ## String Fixed at One End
 
 ![Diagram of harmonics for ](./figures/string-harmonics-fixed-free.png)
+
 [Link to animated graph](https://www.desmos.com/calculator/upw7ahhwb4)
 
 - Again, string is length $L$
@@ -72,4 +74,7 @@ layout: default
 ## Other Notes
 
 - The above focuses on the spatial part of the wave only. The full wave equation also involves time. The waves will be multiplied by a sinusoid in time: $\sin(\omega t)\sin(2\pi n x / \lambda_1)$, with $v = \omega/k$ (rad/sec)/(rad/m) = m/s, i.e. a standing wave.
-    - Note that using the product to sum formula,  $(1/2)(\sin(kx - \omega t) + \sin(kx + \omega t))$, this is what some texts mean when describing a standing wave as sum of two waves propagating in opposite directions.
+    - The sine wave in space determines the _shape_ of the wave, while the sine wave in time makes the shape oscillate up and down over time.
+    - Note that using the product to sum formula,  $(1/2)(\sin(kx - \omega t) + \sin(kx + \omega t))$, this is what some texts[^1] mean when describing a standing wave as sum of two waves propagating in opposite directions.
+
+[^1]: TODO: where exactly have I heard this?... maybe in high school physics? in which case I don't have the textbook anymore. I should also check _Introduction to Electrodynamics_ by Griffiths. I think it mentioned opposing waves as solution to the wave equation, albeit it didn't give much explanation for this.
