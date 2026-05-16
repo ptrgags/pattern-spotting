@@ -64,9 +64,21 @@ We can summarize this as follows:
 
 ## Locating Harmonics on a Guitar String
 
-Where do these fractions of the string show up on a guitar fretboard? Let's list decimal values for both frets and harmonics and collate them into a list.
+Where do these fractions of the string show up on a guitar fretboard?
 
-### Fret Positions 
+I made a diagram of the locations for the first 8 harmonics in my other project, [`p5-sketchbook`](https://ptrgags.dev/p5-sketchbook/GuitarHarmonics/):
+
+![Diagram of harmonics](figures/guitar-harmonics-fretboard-locations.png)
+
+The following subsections detail the calculations
+used to make that diagram.
+
+### Fret Positions
+
+First, we need to know where exactly each
+fret is along the neck as a percentage of the
+length. This way we can compare with the
+harmonics.
 
 - An open string has length $L_0$ and sounds at frequency $f_0$ which depends on its tuning.
 - The nth fret increases the pitch by $n$ semitones, i.e. $f_n = 2^{n/12}f_0$
@@ -107,9 +119,10 @@ Let's make a table of the fret positions measured from the nut.
 
 ### Harmonic Positions
 
-Now, let's list the positions where each harmonic can be heard for the first 8 harmonics
+Now, let's list the positions where each harmonic can be heard for the first 8 harmonics.
+See [§ Nodes of Each Harmonic](#nodes-of-each-harmonic) above.
 
-| Harmonic $n$ | $k/n$ (fraction of length) |
+| Harmonic $n$ | $m/n$ (fraction of length) |
 | -------- | ---------- |
 |   1      | $0, 1$ |
 |   2      | $0.5$ |
@@ -171,11 +184,14 @@ lines indicate harmonics that show up between frets.
   0.875           n=8  ---|
 ```
 
-The above table is not to scale, so I also made this diagram
-in [`p5-sketchbook`](https://ptrgags.dev/p5-sketchbook/GuitarHarmonics/):
-
-![Diagram of harmonics](figures/guitar-harmonics-fretboard-locations.png)
-
 ## Extended Pattern
 
-![Diagram of ](figures/guitar-harmonics-to-infinity.png)
+What happens if you extend the pattern to infinity? You fill in the length of the string
+with harmonics. When visualized like the diagram below, this makes a fractal pattern of lines.
+
+![Diagram of fretboard with a fractal pattern of lines](figures/guitar-harmonics-to-infinity.png)
+
+I like to think of this like a [ruler](../case-studies/ruler.html) for the
+rational numbers between 0 and 1. As the
+fractions use smaller denominators, the lines
+get increasingly shorter.
