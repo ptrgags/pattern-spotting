@@ -17,7 +17,7 @@ layout: default
 
 When you fret a note, you pinch the string against one of the frets. This means the part above the fret will not vibrate. The part below the fret vibrates. This is equivalent to playing an open string with a _shorter length_.
 
-This is the same as solving the [wave equation on a string](../patterns/wave-equation) with the following constraints:
+This is the same as solving the [wave equation on a string](../patterns/wave-equation.html) with the following constraints:
 
   - $f([0, x]) = 0$
   - $f(x) = 0$
