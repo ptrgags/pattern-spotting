@@ -15,6 +15,8 @@ layout: default
 
 ![Diagram of fretting a guitar string](figures/guitar-harmonics-fretting-note.png)
 
+SOUND: Add a sound clip of playing the first several notes along a single string
+
 When you fret a note, you pinch the string against one of the frets. This means the part above the fret will not vibrate. The part below the fret vibrates. This is equivalent to playing an open string with a _shorter length_.
 
 This is the same as solving the [wave equation on a string](../patterns/wave-equation.html) with the following constraints:
@@ -28,6 +30,8 @@ These constraints are equivalent to $f(0) = 0, f(L - F) = 0$, i.e. wave equation
 ### Activating a Harmonic
 
 ![Diagram of activating a harmonic of a guitar string](figures/guitar-harmonics-activating-harmonic.png)
+
+SOUND: Add a sound clip of playing the first 8 harmonics down a single string
 
 When you play a harmonic of the string, you lightly touch the string without making contact with the fretboard. This means the point where you touch the string is fixed, but the string may vibrate both above and below. 
 
