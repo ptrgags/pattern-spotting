@@ -19,11 +19,11 @@ When you fret a note, you pinch the string against one of the frets. This means 
 
 This is the same as solving the [wave equation on a string](../patterns/wave-equation.html) with the following constraints:
 
-  - $f([0, x]) = 0$
-  - $f(x) = 0$
+  - $f(x) = 0, x \le X$ (where $F$ is the position of the fret measured from the nut)
+  - $f(F) = 0$
   - $f(L) = 0$
 
-These constraints are equivalent to $f(0) = 0, f(L - x) = 0$, i.e. wave equation on a _shorter string_ fixed at both ends.
+These constraints are equivalent to $f(0) = 0, f(L - F) = 0$, i.e. wave equation on a _shorter string_ fixed at both ends.
 
 ### Activating a Harmonic
 
@@ -34,7 +34,7 @@ When you play a harmonic of the string, you lightly touch the string without mak
 This setup creates a different set of constraints on the wave equation:
 
 - $f(0) = 0$
-- $f(x) = 0$
+- $f(x) = 0$, where $x$ is the position of the finger, measured from the nut.
 - $f(L) = 0$
 
 The solutions will be explored below. In short, the set of harmonics is restricted, but it depends on the choice of $x$ as a fraction of the string's length.
